@@ -11,7 +11,7 @@ export default function About() {
         <h1 className="page-title">About</h1>
         <p>Irish flautist Fiona Kelly has been hailed by the New York Times as a player with <a href="www.nytimes.com/2010/01/25/arts/music/25focus.html">“impressive technique and elegant musicianship”</a>. </p>
         <br />
-        <p>Based in London, Fiona is in demand as an orchestral and chamber musician. She leads a busy freelance career performing as guest principal flute with many of the UK's leading orchestras including the Academy of St Martin in the Fields, London Philharmonic, the Philharmonia, Royal Philharmonic, BBC Symphony and the Royal Opera House, Covent Garden amongst others, and chamber ensembles such as the Wigmore Soloists. She enjoys regularly returning home to Ireland to the Irish Chamber Orchestra, where she is principal flute. </p>
+        <p>Based in London, Fiona is in demand as an orchestral and chamber musician. She leads a busy freelance career performing as guest principal flute with many of the UK&apos;s leading orchestras including the Academy of St Martin in the Fields, London Philharmonic, the Philharmonia, Royal Philharmonic, BBC Symphony and the Royal Opera House, Covent Garden amongst others, and chamber ensembles such as the Wigmore Soloists. She enjoys regularly returning home to Ireland to the Irish Chamber Orchestra, where she is principal flute. </p>
         <br />
         <p>Before relocating to London, Fiona was principal flute of the Swedish Chamber Orchestra from 2012-2016. As a soloist Fiona has performed at the BBC Proms, Rheingau and Heidelberg festivals. </p>
         <br/>
