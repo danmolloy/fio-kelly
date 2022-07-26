@@ -2,13 +2,17 @@ import Link from 'next/link'
 
 const menuObjects = [
   {
+    name: 'Home',
+    href: '/'
+  },
+  {
     name: 'About',
     href: '/about'
   },
-  {
+  /* {
     name: 'Media',
     href: '/media'
-  },
+  }, */
   {
     name: 'Contact',
     href: '/contact'
