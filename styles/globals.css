@@ -64,7 +64,7 @@
     @apply fixed top-12
   }
   .form {
-    @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center
+    @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center mt-96
   }
   .form-input {
     @apply text-black border border-black rounded-md w-full sm:w-1/2 mb-4
@@ -89,6 +89,9 @@
   .about-body {
     margin-top: 36rem;
   }
+  .form {
+    margin-top: 32rem;
+  }
 }
 /* .about-body {
   margin-top: 36rem;
@@ -110,9 +113,7 @@
   animation: fade-in 5s;
 }
 
-.form {
-  margin-top: 32rem;
-}
+
 
 
 @keyframes fade-in {
