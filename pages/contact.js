@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <Layout>
       <div className="contact-img">
-        <Image src="/images/Fiona flute table.jpg" width={3673/8} height={3673/8} />
+        <Image alt="Fiona in red dress" src="/images/Fiona flute table.jpg" width={3673/8} height={3673/8} />
       </div>
       <ContactForm />
     </Layout>

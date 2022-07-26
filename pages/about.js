@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Layout>
       <div className="about-img">
-      <Image src="/images/FK BW FLUTE BW 1.jpg" width={3485} height={4091}/>
+      <Image alt="Fiona with Flute" src="/images/FK BW FLUTE BW 1.jpg" width={3485} height={4091}/>
       </div>
       <div className="about-body">
         <h1 className="page-title">About</h1>
