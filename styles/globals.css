@@ -28,7 +28,7 @@
     @apply w-screen fixed top-0 mt-8
   }
   .about-body {
-    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 lg:mt-96 opacity-80 text-xl
+    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 mt-96 opacity-80 text-xl 
   }
   .page-title {
     @apply  py-2 text-3xl
@@ -85,9 +85,14 @@
   }
 }
 
-.about-body {
-  margin-top: 36rem;
+@media (min-width: 768px) { 
+  .about-body {
+    margin-top: 36rem;
+  }
 }
+/* .about-body {
+  margin-top: 36rem;
+} */
 
 .main {
   min-height: calc(100vh - 6rem);

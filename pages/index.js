@@ -8,7 +8,10 @@ export default function Home() {
       <div className='home-img'>
         <Image src="/images/Fiona-arms-crossed.jpg"  width={3700/2} height={2954/2} /* layout="fill" objectFit='cover' *//> 
      </div>
-
+     <div className='home-qoute'>
+      <p>“impressive technique and elegant musicianship”.</p>
+      <p>- New York Times</p>
+     </div>
     </Layout>
   )
 }
