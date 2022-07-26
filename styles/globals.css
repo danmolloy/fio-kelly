@@ -67,10 +67,10 @@
     @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center
   }
   .form-input {
-    @apply text-black border border-black rounded-md w-1/2
+    @apply text-black border border-black rounded-md w-full sm:w-1/2 mb-4
   }
   .text-input {
-    @apply  h-12 text-black border border-black rounded-md w-1/2
+    @apply  h-12 text-black border border-black rounded-md w-full sm:w-1/2
   }
   .submit-btn {
     @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:bg-blue-600 m-2 w-24 text-white rounded self-end 
