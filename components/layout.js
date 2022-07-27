@@ -10,7 +10,7 @@ export default function Layout({home, children}) {
   return (
     <div className={home ? "home-layout" : "layout"}>
       <Head>
-        <title>Fiona Kelly Flute London | Ireland</title>
+        <title>Fiona Kelly Flute</title>
         <meta 
           name="description" 
           content='Fiona Kelly is a freelance flautist based in London. She has been hailed by the New York Times as a player with “impressive technique and elegant musicianship".' />
