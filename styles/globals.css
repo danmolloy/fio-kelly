@@ -106,17 +106,20 @@
 }
 
 /* .home-img */ .fade-in {
-  animation: fade-in 5s;
+  animation: fade-in 3s;
+}
+.home-img {
+  animation: fade-in 3s;
 }
 .fade-out {
   animation: fade-in 3s;
 }
-/* .about-img {
-  animation: fade-in 2s;
+.about-img {
+  animation: fade-in 3s;
 }
 .contact-img{
   animation: fade-in 2s;
-} */
+}
 
 
 .home-quote {
