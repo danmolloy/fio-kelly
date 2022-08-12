@@ -9,7 +9,7 @@ const menuObjects = [
     name: 'About',
     href: '/about'
   },
-  /* {
+/*  {
     name: 'Media',
     href: '/media'
   }, */

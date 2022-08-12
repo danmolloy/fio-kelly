@@ -4,31 +4,31 @@
 
 @layer components {
   .layout {
-    @apply  w-screen min-h-screen flex flex-col justify-between font-custom bg-slate-100 text-black
+    @apply  w-screen min-h-screen flex flex-col justify-between font-custom bg-slate-50 text-black
   }
   .home-layout {
-    @apply min-h-screen flex flex-col items-center justify-between font-custom
+    @apply min-h-screen flex flex-col items-center justify-between font-custom 
   }
   .header {
-    @apply fixed z-20 h-16 w-screen top-0 flex flex-row items-center justify-between bg-gray-50 shadow text-amber-500 fill-amber-500
+    @apply fixed z-30 h-16 w-screen top-0 flex flex-row items-center justify-between bg-slate-50 shadow text-amber-500 fill-amber-500
   }
   .header-name {
-    @apply p-2 text-3xl tracking-wider hover:text-amber-400  active:text-amber-500 
+    @apply p-2 text-3xl tracking-wider hover:text-amber-400  active:text-amber-500 font-display
   }
   .home-page {
-    @apply flex flex-col md:justify-center items-center p-2 bg-gray-50 h-screen
+    @apply flex flex-col w-screen md:justify-center items-center p-2 /* bg-gradient-to-b from-orange-400 to-slate-900 */ h-screen
   }
   .home-img {
     @apply lg:w-4/5 mt-20 sm:mt-12  lg:fixed
   }
   .home-qoute {
-    @apply mt-16 mx-3 p-2 lg:fixed z-10 bg-gray-50 lg:right-0 lg:w-1/3 flex flex-col
+    @apply mt-16 mx-3 p-2 lg:fixed z-10  lg:right-0 lg:w-1/3 flex flex-col 
   }
   .about-img {
     @apply w-screen fixed top-0 mt-8
   }
   .about-body {
-    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 mt-96 opacity-80 text-xl 
+    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 mt-96 opacity-80 text-xl mb-24
   }
   .page-title {
     @apply  py-2 text-3xl
@@ -40,31 +40,31 @@
     @apply rounded-full self-end text-gray-50 fill-amber-600
   }
   .menu {
-    @apply rounded-bl flex flex-col z-30 bg-gray-50 fixed w-1/2 md:w-1/4 right-0 shadow mt-16 text-2xl
+    @apply opacity-90 rounded-bl flex flex-col z-20 bg-slate-50 fixed w-screen sm:w-1/3 min-h-screen sm:min-h-0 right-0 shadow mt-16 text-2xl
   }
   .menu-list{
-    @apply flex flex-col w-full justify-evenly
+    @apply flex flex-col w-full justify-evenly mt-16
   }
   .menu-items {
-    @apply py-4 flex flex-col text-black  items-center justify-center hover:text-amber-500 active:text-amber-400
+    @apply py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-amber-500 active:text-amber-400
   }
   .menu-close-icon {
     @apply rounded-full hover:bg-gray-100 active:bg-gray-200 text-black
   }
   .main {
-    @apply w-full flex flex-col items-center justify-center
+    @apply w-full flex flex-col items-center justify-center /* bg-gradient-to-b from-slate-50 to-blue-50 */
   }
   .footer {
-    @apply z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t bg-gray-50
+    @apply z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t bg-slate-50
   }
   .icons {
-    @apply p-2 w-10 h-10 m-2 hover:text-blue-500 active:text-blue-600 
+    @apply p-2 w-10 h-10 m-2 hover:text-blue-500 active:text-blue-600 hover:cursor-pointer
   }
   .contact-img {
     @apply fixed top-12
   }
   .form {
-    @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center mt-96
+    @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center mt-96 mb-24 rounded shadow
   }
   .form-input {
     @apply text-black border border-black rounded-md w-full sm:w-1/2 mb-4
@@ -105,16 +105,33 @@
   animation: slide-in .3s linear;
 }
 
-.home-img {
+/* .home-img */ .fade-in {
+  animation: fade-in 5s;
+}
+.fade-out {
   animation: fade-in 3s;
 }
+/* .about-img {
+  animation: fade-in 2s;
+}
+.contact-img{
+  animation: fade-in 2s;
+} */
+
 
 .home-quote {
   animation: fade-in 5s;
 }
 
 
-
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 @keyframes fade-in {
   from {
@@ -127,9 +144,9 @@
 
 @keyframes slide-in {
   from {
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }

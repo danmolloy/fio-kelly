@@ -1,14 +1,16 @@
 import Head from "next/head"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Footer from "./footer"
 import Header from "./header"
 import Menu from "./menu"
 
 export default function Layout({home, children}) {
   const [showMenu, setShowMenu] = useState(false)
+  
 
   return (
-    <div className={home ? "home-layout" : "layout"}>
+    <div 
+    className={ home ? "home-layout fade-in" :  "layout fade-out"} >
       <Head>
         <title>Fiona Kelly Flute</title>
         <meta 
@@ -18,7 +20,7 @@ export default function Layout({home, children}) {
       </Head>
       <Header setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} home={home}/>
       {showMenu && <Menu showMenu={() => setShowMenu(false)}/>}
-      <div className={home ? "home-page" : "main"}>
+      <div className={ home ? "home-page" : "main"} >
         {children}
       </div>
       {!home && <Footer />}

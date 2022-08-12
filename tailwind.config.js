@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: [ "Dancing Script", "Quintessential", ...defaultTheme.fontFamily.serif],
+        display: [ "Forum", "Quintessential", ...defaultTheme.fontFamily.serif],
         special: [ "Redressed", "Satisfy", "Quintessential", ...defaultTheme.fontFamily.serif],
         custom: [ "Gentium Plus", "Lato","Fredoka", ...defaultTheme.fontFamily.serif]
     },

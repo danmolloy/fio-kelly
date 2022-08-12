@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default function About() {
   return (
     <Layout>
-      <div className="about-img"  >
+      <div className="about-img">
       <Image alt="Fiona with Flute" src="/images/fk-bw-flute.jpg" width={3485} height={4091}/>
       </div>
       <div className="about-body">
