@@ -10,7 +10,7 @@
     @apply min-h-screen flex flex-col items-center justify-between font-custom 
   }
   .header {
-    @apply fixed z-30 h-16 w-screen top-0 flex flex-row items-center justify-between bg-slate-50 shadow text-amber-500 fill-amber-500
+    @apply fixed z-30 h-16 w-screen top-0 flex flex-row items-center justify-between /* bg-slate-50 */ shadow /* text-amber-500 fill-amber-500 */ bg-slate-50 fill-black text-black
   }
   .header-name {
     @apply p-2 text-3xl tracking-wider hover:text-amber-400  active:text-amber-500 font-display
@@ -28,7 +28,7 @@
     @apply w-screen fixed top-0 mt-8
   }
   .about-body {
-    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 mt-96 opacity-80 text-xl mb-24
+    @apply p-4 w-screen sm:w-2/3 bg-gray-50 z-10 mt-96 opacity-80 text-xl sm:mb-24
   }
   .page-title {
     @apply  py-2 text-3xl
@@ -61,7 +61,7 @@
     @apply p-2 w-10 h-10 m-2 hover:text-blue-500 active:text-blue-600 hover:cursor-pointer
   }
   .contact-img {
-    @apply fixed top-12
+    @apply fixed top-20
   }
   .form {
     @apply opacity-90 z-10 bg-gray-50 flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center mt-96 mb-24 rounded shadow

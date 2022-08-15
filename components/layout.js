@@ -10,7 +10,7 @@ export default function Layout({home, children}) {
 
   return (
     <div 
-    className={ home ? "home-layout fade-in" :  "layout fade-out"} >
+    className={ home ? "home-layout" :  "layout"} >
       <Head>
         <title>Fiona Kelly Flute</title>
         <meta 
@@ -20,7 +20,7 @@ export default function Layout({home, children}) {
       </Head>
       <Header setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} home={home}/>
       {showMenu && <Menu showMenu={() => setShowMenu(false)}/>}
-      <div className={ home ? "home-page" : "main"} >
+      <div className={ home ? "home-page fade-in" : "main fade-in"} >
         {children}
       </div>
       {!home && <Footer />}
