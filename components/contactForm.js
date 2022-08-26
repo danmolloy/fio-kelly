@@ -57,7 +57,7 @@ export default function ContactForm() {
       }}> 
 
       <Form className="form">
-      <h1 className="self-start">Contact</h1> 
+      <h1 className="page-title self-start">Contact</h1> 
           <div className='contact-blurb'>
           <p className='my-1'>For concert bookings, please contact <Link href={"https://maslink.co.uk/"}><a className='link'>The Musicians Answering Service</a></Link>.</p>
           <p className='my-1'>For all other enquiries, complete the form below.</p>
