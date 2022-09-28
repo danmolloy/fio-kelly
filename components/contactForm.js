@@ -1,7 +1,6 @@
-import styles from '../styles/Home.module.css';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function ContactForm() {
@@ -12,6 +11,20 @@ export default function ContactForm() {
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+
+  const logKey = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+    } 
+  }
+
+  useEffect(() => {
+    window.addEventListener("keydown", logKey)
+    return () => {
+      window.removeEventListener("keydown",logKey)
+    }
+  }, [logKey])
+
 
   return (
     <Formik    
