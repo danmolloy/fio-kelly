@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
-  const logKey = (e) => {
+  /* const logKey = (e) => {
     if (e.keyCode === 13) {
       e.preventDefault();
     } 
@@ -23,7 +23,7 @@ export default function ContactForm() {
     return () => {
       window.removeEventListener("keydown",logKey)
     }
-  }, [logKey])
+  }, [logKey]) */
 
 
   return (
@@ -68,7 +68,7 @@ export default function ContactForm() {
         }
         })
       }}> 
-
+      {(props) => (
       <Form className="form">
       <h1 className="page-title self-start">Contact</h1> 
           <div className='contact-blurb'>
@@ -98,10 +98,16 @@ export default function ContactForm() {
 
           <label htmlFor='msg-text' className="form-label">Message</label>
           <Field 
+          multiline
+          maxlength="200"
+          rows="4"
+          component="textarea"
             id="msg-text" 
-            className="text-input" 
-            type="text"
+            className="text-input"
+            type="textarea"
             name="message"/>
+            {props.values.message.length > 0 && <p className='self-center text-sm mx-2 opacity-40'>{`${props.values.message.length}/200`}</p>}
+
           <ErrorMessage name="message">
             { msg => <div className="form-error">{msg}</div> }
           </ErrorMessage>
@@ -109,7 +115,7 @@ export default function ContactForm() {
         <div>
         {sendStatus}
       </div>
-      </Form> 
+      </Form> )}
     </Formik>
   )
 }

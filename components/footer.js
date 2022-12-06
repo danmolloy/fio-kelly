@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className='footer'>
       <Link href="https://twitter.com/fizzlekelly">
-        <div className='hover:text-blue-500 '>
+        <div className='hover:text-blue-500'>
           <BsTwitter className='icons'/>
         </div>
       </Link>
