@@ -106,7 +106,7 @@ export default function ContactForm() {
             className="text-input"
             type="textarea"
             name="message"/>
-            {props.values.message.length > 0 && <p className='self-center text-sm mx-2 opacity-40'>{`${props.values.message.length}/200`}</p>}
+            {props.values.message.length > 0 && <p className='self-center text-sm mx-2 opacity-40'>{`${props.values.message.length}/500`}</p>}
 
           <ErrorMessage name="message">
             { msg => <div className="form-error">{msg}</div> }
