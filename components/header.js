@@ -17,9 +17,9 @@ export default function Header({showMenu, setShowMenu, home}) {
   return (
     <div className="header">
     <Link href="/">
-        <a>
+        
         <h2 className='header-name strokeme'>FIONA KELLY</h2>
-        </a> 
+        
       </Link>
       <MenuIcon setShowMenu={() => setShowMenu()} showMenu={showMenu}/>
     </div>

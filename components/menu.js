@@ -25,9 +25,9 @@ export default function Menu() {
       <div className='menu-list'>
       {menuObjects.map(i => (
         <Link href={i.href} key={i.href}>
-          <a className='menu-items font-serif font-light'>
+          <div className='menu-items font-serif font-light'>
             {i.name}
-          </a>
+          </div>
         </Link>
       ))}
       </div>
