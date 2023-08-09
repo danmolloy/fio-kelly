@@ -64,8 +64,8 @@ export default function Albums() {
     <IndexSection title={"Listen"} classNames="bg-zinc-100">
       <div className=" w-full flex flex-row flex-wrap items-center justify-center">
         {albumsArr.map(i => (
-          <Link target="_blank" href={i.link} className="w-[250px] h-[250px] shadow-2xl m-4 hover:shadow-gray-400 active:shadow-gray-400" key={i.src}>
-          <Image src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
+          <Link target="_blank" href={i.link} className=" " key={i.src}>
+          <Image className="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300" src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
           
         </Link>
         ))}
