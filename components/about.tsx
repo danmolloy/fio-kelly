@@ -9,7 +9,7 @@ export default function AboutSection() {
       <div className=" w-full h-full  flex flex-row">
       <article className="text-zinc-500 tracking-wider lg:w-2/3">
       <p className="my-2">
-      Irish flautist Fiona Kelly has been hailed by the New York Times as a player with <a href="https://www.nytimes.com/2010/01/25/arts/music/25focus.html" target="_blank" className="hover:underline text-blue-500">“impressive technique and elegant musicianship”</a>.</p>
+      Irish flautist Fiona Kelly has been hailed by the New York Times as a player with <a href="https://www.nytimes.com/2010/01/25/arts/music/25focus.html" target="_blank" className="underline hover:text-blue-500">“impressive technique and elegant musicianship”</a>.</p>
       <p className="my-2">
       Based in London, Fiona is in demand as an orchestral and chamber musician. She leads a busy freelance career performing as guest principal flute with many of the UK’s leading orchestras including the London Philharmonic Orchestra, the Philharmonia, Royal Philharmonic Orchestra, the Academy of St Martin in the Fields and the Orchestra of the Royal Opera House, Covent Garden amongst others. 
       </p>
