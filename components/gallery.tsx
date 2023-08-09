@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IndexSection from "./indexSection";
 
-const galleryPics: {src: string, width: number, height: number, alt: string}[] = [
+const galleryPics: {src: string, width: number, height: number, alt: string, smScreenOnly?: boolean}[] = [
   {
     src: "/images/Fiona-arms-crossed.jpg",
     width: 680,
@@ -20,12 +20,20 @@ const galleryPics: {src: string, width: number, height: number, alt: string}[] =
     height: 580,
     alt: "Fiona with flute arms crossed",
   },
-  /* {
-    src: "/images/fiona-behind-bw.jpg",
-    width: 535,
-    height: 745,
-    alt: "Fiona from behind black and white",
-  }, */
+  {
+    src: "/images/fiona-profile.jpg",
+    alt: "Fiona profile photo with flute",
+    width: 650 * .8,
+    height: 850 * .8,
+    smScreenOnly: true,
+  },
+  {
+    alt: "Fiona with flute black and white",
+    width: 726 * .8, 
+    height: 858 * .8,
+    src: "/images/fk-bw-flute.jpg", 
+    smScreenOnly: true
+  },
   {
     src: "/images/fiona-close-table.jpg",
     width: 680,
@@ -39,7 +47,7 @@ export default function Gallery() {
     <IndexSection title="Gallery">
       <div className=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {galleryPics.map(i => (
-          <div key={i.src} className="m-2 shadow-xl">
+          <div key={i.src} className={i.smScreenOnly ? "m-2 shadow-xl md:hidden" : "m-2 shadow-xl"}>
             <Image src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} />
           </div>
         ))}
