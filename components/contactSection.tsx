@@ -1,9 +1,11 @@
+import IndexSection from "./indexSection";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 
-export default function ContactForm() {
+export default function ContactSection() {
   const [sendStatus, setSendStatus] = useState(null)
 
   const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
@@ -12,21 +14,9 @@ export default function ContactForm() {
 
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
-  /* const logKey = (e) => {
-    if (e.keyCode === 13) {
-      e.preventDefault();
-    } 
-  }
-
-  useEffect(() => {
-    window.addEventListener("keydown", logKey)
-    return () => {
-      window.removeEventListener("keydown",logKey)
-    }
-  }, [logKey]) */
-
-
   return (
+    <IndexSection title="Contact" classNames="bg-zinc-100">
+      <div className="flex flex-row w-full justify-between  h-[30rem]">
     <Formik    
     initialValues={{
       name: '',
@@ -69,53 +59,66 @@ export default function ContactForm() {
         })
       }}> 
       {(props) => (
-      <Form className="form">
-      <h1 className="page-title self-start">Contact</h1> 
-          <div className='contact-blurb'>
-          <p className='my-1'>For concert bookings, please contact <Link href={"https://maslink.co.uk/"}><a className='link'>The Musicians Answering Service</a></Link>.</p>
+      <Form className="font-sans flex flex-col lg:w-1/2  ">
+          <div className='px-2 '>
+          <p className='my-1'>For concert bookings, please contact <Link href={"https://maslink.co.uk/"} className="text-blue-500 hover:underline">The Musicians Answering Service</Link>.</p>
           <p className='my-1'>For all other enquiries, complete the form below.</p>
           </div>
-
+          <div className="flex flex-col m-2">
           <label htmlFor='name-input' className="form-label">Name</label>
           <Field 
             id="name-input" 
-            className="form-input"
+            className="text-black border border-black rounded-md w-full p-1"
             type="text"
             name="name"/>
+            <div className="h-6">
           <ErrorMessage name="name">
-            { msg => <div className="form-error">{msg}</div> }
+            { msg => <div className="text-sm text-red-500 h-6">{msg}</div> }
           </ErrorMessage>
-
+          </div>
+          </div>
+          <div className="flex flex-col m-2">
           <label htmlFor='email-input' className="form-label">Email</label>
           <Field
             id="email" 
-            className="form-input" 
+            className="text-black border border-black rounded-md w-full p-1" 
             type="email"
             name="email"/>
-          <ErrorMessage name="email">
-          { msg => <div className="form-error">{msg}</div> }
+            <div className="h-6">
+          <ErrorMessage name="email" >
+          { msg => <div className="text-sm text-red-500 h-6">{msg}</div> }
           </ErrorMessage>
-
+          </div>
+          </div>
+          <div className="flex flex-col m-2 mb-0">
           <label htmlFor='msg-text' className="form-label">Message</label>
           <Field 
-          multiline
-          maxlength="500"
+          multiline="6"
+          maxLength="500"
           rows="4"
           component="textarea"
             id="msg-text" 
-            className="text-input"
+            className=" text-black border border-black rounded-md w-full p-1"
             type="textarea"
             name="message"/>
+            <div className="h-6">
             {props.values.message.length > 0 && <p className='self-center text-sm mx-2 opacity-40'>{`${props.values.message.length}/500`}</p>}
 
           <ErrorMessage name="message">
-            { msg => <div className="form-error">{msg}</div> }
+            { msg => <div className="text-sm text-red-500">{msg}</div> }
           </ErrorMessage>
-        <button id="submit-button" type='submit' className="submit-btn">Submit</button>
+          </div>
+          </div>
+        <button id="submit-button" type='submit' className="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end">Submit</button>
         <div>
         {sendStatus}
       </div>
       </Form> )}
     </Formik>
+    <div className="hidden lg:flex mx-12">
+      <Image alt="Fiona profile photo with flute" src={"/images/fiona-profile.jpg"} width="325" height="425" />
+    </div>
+    </div>
+    </IndexSection>
   )
 }

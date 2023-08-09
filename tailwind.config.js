@@ -10,18 +10,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: [ "Forum", "Quintessential", ...defaultTheme.fontFamily.serif],
-        special: [ "Redressed", "Satisfy", "Quintessential", ...defaultTheme.fontFamily.serif],
-        custom: [ "Gentium Plus", "Lato","Fredoka", ...defaultTheme.fontFamily.serif]
-    },
+        sans: [ 'var(--font-raleway)', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-poiret)',...defaultTheme.fontFamily.sans]
+            },
     },
   },
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        'p': { fontSize: theme('fontSize.xl') },
+        'p': { fontSize: theme('fontSize.md') },
 
-        'h1': { fontSize: theme('fontSize.3xl') },
+        'h1': { fontSize: theme('fontSize.4xl') },
         'h2': { fontSize: theme('fontSize.2xl') },
         'h3': { fontSize: theme('fontSize.xl') },
       })

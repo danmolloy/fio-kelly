@@ -2,89 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .layout {
-    @apply  w-screen min-h-screen flex flex-col justify-between font-custom bg-white text-black
-  }
-  .home-layout {
-    @apply min-h-screen flex flex-col items-center justify-between font-custom 
-  }
-  .header {
-    @apply fixed z-30 h-16 w-screen top-0 flex flex-row items-center justify-between /* bg-slate-50 */ shadow /* text-amber-500 fill-amber-500 */ bg-white fill-black text-black
-  }
-  .header-name {
-    @apply p-2 text-3xl tracking-wider hover:text-amber-400  active:text-amber-500 font-display
-  }
-  .home-page {
-    @apply flex flex-col w-screen md:justify-center items-center p-2 /* bg-gradient-to-b from-orange-400 to-slate-900 */ h-screen
-  }
-  .home-img {
-    @apply lg:w-4/5 mt-20 sm:mt-12  lg:fixed
-  }
-  .home-qoute {
-    @apply mt-16 mx-3 p-2 lg:fixed z-10  lg:right-0 lg:w-1/3 flex flex-col 
-  }
-  .about-img {
-    @apply w-screen fixed top-0 mt-8
-  }
-  .about-body {
-    @apply p-4 w-screen sm:w-2/3 /* bg-gray-50 */ bg-white z-10 mt-96 opacity-80 text-xl sm:mb-24
-  }
-  .page-title {
-    @apply  py-2 text-3xl
-  }
-  .menu-icon {
-    @apply m-2 hover:fill-amber-400  active:fill-amber-500 
-  }
-  .home-menu-icon {
-    @apply rounded-full self-end text-gray-50 fill-amber-600
-  }
-  .menu {
-    @apply opacity-90 rounded-bl flex flex-col z-20 /* bg-slate-50 */ bg-white fixed w-screen sm:w-1/3 min-h-screen sm:min-h-0 right-0 shadow mt-16 text-2xl
-  }
-  .menu-list{
-    @apply flex flex-col w-full justify-evenly mt-16
-  }
-  .menu-items {
-    @apply py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-amber-500 active:text-amber-400
-  }
-  .menu-close-icon {
-    @apply rounded-full hover:bg-gray-100 active:bg-gray-200 text-black
-  }
-  .main {
-    @apply w-full flex flex-col items-center justify-center 
-  }
-  .footer {
-    @apply z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t bg-slate-50
-  }
-  .icons {
-    @apply p-2 w-10 h-10 m-2 hover:text-blue-500 active:text-blue-600 hover:cursor-pointer
-  }
-  .contact-img {
-    @apply fixed top-20
-  }
-  .form {
-    @apply opacity-90 z-10 /* bg-gray-50 */ bg-white flex flex-col w-screen md:w-2/3 pb-24 px-4 items-center mt-96 sm:mb-24 rounded sm:shadow
-  }
-  .form-input {
-    @apply text-black border border-black rounded-md w-full sm:w-1/2 mb-4
-  }
-  .text-input {
-    @apply text-black border border-black rounded-md w-full sm:w-1/2
-  }
-  .submit-btn {
-    @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:bg-blue-600 m-2 w-24 text-white rounded self-end 
-  }
-  .form-label {}
-  .contact-blurb {
-    @apply px-2 
-  }
-
-  .link {
-    @apply text-amber-500 hover:text-amber-600 active:text-amber-600 hover:underline
-  }
-}
-
 @media (min-width: 768px) { 
   .about-body {
     margin-top: 36rem;
@@ -105,7 +22,7 @@
   animation: slide-in .3s linear;
 }
 
-/* .home-img */ .fade-in {
+.fade-in {
   animation: fade-in 3s;
 }
 .home-img {
