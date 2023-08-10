@@ -11,6 +11,8 @@ export default function Footer() {
       <button className='hover:underline font-display text-sm font-light hover:cursor-pointer active:text-zinc-400' onClick={() => scroll.scrollToTop({ smooth: true, duration: 750 })}>
         Back to top
       </button>
+      <a className='text-sm font-light font-display self-end mt-3 text-gray-500 underline hover:text-blue-500' href="https://www.purpleraspberry.uk/" target='_blank'>Purple Rasberry Photography</a>
+
       </div>
     </div>
   )
