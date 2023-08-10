@@ -61,7 +61,7 @@ export default function ContactSection() {
       {(props) => (
       <Form className="font-sans flex flex-col lg:w-1/2  ">
           <div className='px-2 '>
-          <p className='my-1'>For concert bookings, please contact <Link href={"https://maslink.co.uk/"} className="hover:text-blue-500 underline">The Musicians Answering Service</Link>.</p>
+          <p className='my-1'>For concert bookings, please contact <a target="_blank" href={"https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"} className="hover:text-blue-500 underline">The Musicians Answering Service</a>.</p>
           <p className='my-1'>For all other enquiries, complete the form below.</p>
           </div>
           <div className="flex flex-col m-2">
