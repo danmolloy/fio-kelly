@@ -47,7 +47,7 @@ export default function Gallery() {
     <IndexSection title="Gallery">
       <div className=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {galleryPics.map(i => (
-          <div key={i.src} className={i.smScreenOnly ? "m-2 shadow-xl md:hidden" : "m-2 shadow-xl"}>
+          <div key={i.src} className={i.smScreenOnly ? "m-2 shadow-xl lg:hidden" : "m-2 shadow-xl"}>
             <Image src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} />
           </div>
         ))}
