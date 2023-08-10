@@ -17,7 +17,7 @@ export default function AboutSection() {
       Solo and chamber music engagements have led to collaborations with ensembles and artists including the Wigmore Soloists, Antje Weithaas, Uri Caine and Håkan Hardenberger. Fiona has performed concertos at the BBC Proms, Rheingau and Heidelberg festivals. With a keen interest in new music, Fiona has premiered and recorded new works by Uri Caine, Stephan Mackey and Ian Wilson. 
       </p>
       <p className="my-2">
-      Fiona has a duo with her harpist sister Jean Kelly. They have performed recitals and concertos throughout the U.K. and Ireland. A recent highlight was a recital at the National Concert Hall Chamber Music Series: The Natural World, with a programme titled “Toward the Sea” focussing on the politicising of our seas, climate change and the importance of nature. The Kelly Sisters often perform works and arrangements of Irish music by their grandfather, composer T.C Kelly. 
+      Fiona has a duo with her harpist sister Jean Kelly. They have performed recitals and concertos throughout the U.K. and Ireland. A recent highlight was a recital at the National Concert Hall Chamber Music Series: The Natural World, with a programme titled “Toward the Sea”. The Kelly Sisters often perform works and arrangements of Irish music by their grandfather, composer T.C Kelly. 
 
       </p>
       <p className="my-2">

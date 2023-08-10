@@ -11,7 +11,7 @@ export default function Menu(props: MenuProps) {
   const { showMenu, setShowMenu,setShowHeader } = props;
   return (
     <div className={showMenu 
-      ? ' ease-out transition  duration-500 opacity-90 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen  right-0 shadow text-2xl' 
+      ? ' ease-out transition duration-500 opacity-90 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen  right-0 shadow text-2xl' 
       : ' ease-in -translate-y-full transition duration-500 opacity-90 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen right-0 shadow text-2xl'}>
       <div className='flex flex-col w-full justify-evenly mt-16 font-display mt-16'>
       <button className='py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-amber-500 active:text-amber-400' onClick={() => {setShowMenu(false); scroll.scrollToTop({ smooth: true, duration: 500 })}}>
