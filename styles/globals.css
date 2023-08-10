@@ -14,6 +14,10 @@
   margin-top: 36rem;
 } */
 
+.twitter-blue {
+  color: rgb(29, 161, 242);
+}
+
 .main {
   min-height: calc(100vh - 6rem);
 }
