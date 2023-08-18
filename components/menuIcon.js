@@ -9,7 +9,7 @@ export default function MenuIcon({showMenu, setShowMenu}) {
 
 
   return (
-      <button className={` m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden`} onClick={() => setShowMenu()}>
+      <button className={ `${showMenu && "fill-black"} m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden`} onClick={() => setShowMenu()}>
         <svg width="30" height="22" className='m-2' >
           <animated.rect style={props} width="30" height="2" rx="2" />
           <animated.rect style={props2} y="8" width="30" height="2" rx="2"/>
