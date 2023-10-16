@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <IndexSection title={"About"}>
-      <div className=" w-full h-full  flex flex-row">
-      <article className="text-zinc-500 tracking-wider lg:w-2/3">
-      <p className="my-2">
+    <IndexSection title={"About"} classNames=" bg-white">
+      <div className=" w-full h-full  flex flex-row ">
+      <article className="text-black tracking-wider lg:w-2/3">
+      <p className="my-2 ">
       Irish flautist Fiona Kelly has been hailed by the New York Times as a player with “impressive technique and elegant musicianship”.</p>
       <p className="my-2">
       Based in London, Fiona is in demand as an orchestral and chamber musician. She leads a busy freelance career performing as guest principal flute with many of the UK’s leading orchestras including the London Philharmonic Orchestra, the Philharmonia, Royal Philharmonic Orchestra, the Academy of St Martin in the Fields and the Orchestra of the Royal Opera House, Covent Garden amongst others. 

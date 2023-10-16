@@ -15,7 +15,7 @@ export default function ContactSection() {
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
   return (
-    <IndexSection title="Contact" classNames="bg-zinc-100">
+    <IndexSection title="Contact" classNames="bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50">
       <div className="flex flex-row w-full justify-between  h-[30rem]">
     <Formik    
     initialValues={{

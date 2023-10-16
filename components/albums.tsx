@@ -61,7 +61,7 @@ const albumsArr: {
 
 export default function Albums() {
   return (
-    <IndexSection title={"Listen"} classNames="bg-zinc-100">
+    <IndexSection title={"Listen"} classNames="bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50">
       <div className=" w-full flex flex-row flex-wrap items-center justify-center">
         {albumsArr.map(i => (
           <Link target="_blank" href={i.link} className=" " key={i.src}>
