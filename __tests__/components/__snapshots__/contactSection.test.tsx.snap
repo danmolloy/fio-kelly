@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactSection /> matches snapshot 1`] = `
+<div
+  class="flex flex-row w-full justify-between  h-[30rem]"
+  data-testid="contact-form"
+>
+  <form
+    action="#"
+    class="font-sans flex flex-col lg:w-1/2  "
+  >
+    <div
+      class="px-2 "
+    >
+      <p
+        class="my-1"
+      >
+        For concert bookings, please contact 
+        <a
+          class="hover:text-blue-500 underline"
+          href="https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"
+          target="_blank"
+        >
+          The Musicians Answering Service
+        </a>
+        .
+      </p>
+      <p
+        class="my-1"
+      >
+        For all other enquiries, complete the form below.
+      </p>
+    </div>
+    <div
+      class="flex flex-col m-2"
+    >
+      <label
+        class="form-label"
+        for="name-input"
+      >
+        Name
+      </label>
+      <input
+        class="text-black border border-black rounded-md w-full p-1"
+        id="name-input"
+        name="name"
+        type="text"
+        value=""
+      />
+      <div
+        class="h-6"
+      />
+    </div>
+    <div
+      class="flex flex-col m-2"
+    >
+      <label
+        class="form-label"
+        for="email-input"
+      >
+        Email
+      </label>
+      <input
+        class="text-black border border-black rounded-md w-full p-1"
+        id="email-input"
+        name="email"
+        type="email"
+        value=""
+      />
+      <div
+        class="h-6"
+      />
+    </div>
+    <div
+      class="flex flex-col m-2 mb-0"
+    >
+      <label
+        class="form-label"
+        for="msg-text"
+      >
+        Message
+      </label>
+      <textarea
+        class=" text-black border border-black rounded-md w-full p-1"
+        id="msg-text"
+        maxlength="500"
+        multiline="6"
+        name="message"
+        rows="4"
+        type="textarea"
+      />
+      <div
+        class="h-6"
+      />
+    </div>
+    <button
+      class="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end"
+      id="submit-button"
+      type="submit"
+    >
+      Submit
+    </button>
+    <div />
+  </form>
+  <div
+    class="hidden lg:flex mx-12"
+  >
+    <img
+      alt="Fiona profile photo with flute"
+      data-nimg="1"
+      decoding="async"
+      height="425"
+      loading="lazy"
+      src="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=750&q=75"
+      srcset="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=750&q=75 2x"
+      style="color: transparent;"
+      width="325"
+    />
+  </div>
+</div>
+`;

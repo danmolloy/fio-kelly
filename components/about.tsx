@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <IndexSection title={"About"} classNames=" bg-white">
-      <div className=" w-full h-full  flex flex-row ">
+    <IndexSection  title={"About"} classNames=" bg-white">
+      <div data-testid="about-section" className=" w-full h-full  flex flex-row ">
       <article className="text-black tracking-wider lg:w-2/3">
       <p className="my-2 ">
       Irish flautist Fiona Kelly has been hailed by the New York Times as a player with “impressive technique and elegant musicianship”.</p>

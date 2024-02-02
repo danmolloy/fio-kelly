@@ -3,7 +3,7 @@ import IndexSection from "./indexSection";
 import Link from "next/link";
 
 
-const albumsArr: {
+export const albumsArr: {
   title: string
   artists: string
   src: string
@@ -62,11 +62,10 @@ const albumsArr: {
 export default function Albums() {
   return (
     <IndexSection title={"Listen"} classNames="bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50">
-      <div className=" w-full flex flex-row flex-wrap items-center justify-center">
+      <div data-testid="albums-section" className=" w-full flex flex-row flex-wrap items-center justify-center">
         {albumsArr.map(i => (
-          <Link target="_blank" href={i.link} className=" " key={i.src}>
+          <Link data-testid={`${i.link}-link`} target="_blank" href={i.link} className=" " key={i.src}>
           <Image className="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300" src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
-          
         </Link>
         ))}
       </div>

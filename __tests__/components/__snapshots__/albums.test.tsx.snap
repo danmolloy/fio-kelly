@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Albums /> matches snapshot 1`] = `
+<div
+  class=" w-full flex flex-row flex-wrap items-center justify-center"
+  data-testid="albums-section"
+>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw-link"
+    href="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of The Brandenburg Project by Swedish Chamber Orchestra & Thomas Dausgaard"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="The Brandenburg Project"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw-link"
+    href="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Folk Songs of the British Isles by Various, including Fiona Kelly & Jean Kelly"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Folk Songs of the British Isles"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA-link"
+    href="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Wild is the Wind by Ian Wilson"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Wild is the Wind"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw-link"
+    href="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Symphony No. 5: Prokofiev by Santtu-Matias Rouvali & Philharmonia Orchestra"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Symphony No. 5: Prokofiev"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g-link"
+    href="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of A Midsummer Night's Dream by Swedish Chamber Orchestra & Thomas Dausgaard"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="A Midsummer Night's Dream"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw-link"
+    href="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Brahms Symphony No. 3 by Swedish Chamber Orchestra & Thomas Dausgaard"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Brahms Symphony No. 3"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA-link"
+    href="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Brett Dean: Shadow Music by Swedish Chamber Orchestra & Brett Dean"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Brett Dean: Shadow Music"
+      width="250"
+    />
+  </a>
+  <a
+    class=" "
+    data-testid="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw-link"
+    href="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw"
+    target="_blank"
+  >
+    <img
+      alt="Album cover of Mozart: Piano Concertos No. 19 & 27 by Francesco Piemontesi, Andrew Manze & Scottish Chamber Orchestra"
+      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      data-nimg="1"
+      decoding="async"
+      height="250"
+      loading="lazy"
+      src="/_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      title="Mozart: Piano Concertos No. 19 & 27"
+      width="250"
+    />
+  </a>
+</div>
+`;

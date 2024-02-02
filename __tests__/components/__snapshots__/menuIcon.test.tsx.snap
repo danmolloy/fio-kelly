@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuIcon /> matches snapshot 1`] = `
+<button
+  class="fill-black m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
+  data-testid="menu-icon"
+>
+  <svg
+    class="m-2"
+    height="22"
+    width="30"
+  >
+    <rect
+      height="2"
+      rx="2"
+      style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+      width="30"
+    />
+    <rect
+      height="2"
+      rx="2"
+      style="opacity: 1;"
+      width="30"
+      y="8"
+    />
+    <rect
+      height="2"
+      rx="2"
+      style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+      width="30"
+      y="17"
+    />
+  </svg>
+</button>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> matches snapshot 1`] = `
+<div
+  class="font-display  transition duration-500 ease-out fixed fill-white  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between   text-zinc-100"
+  data-testid="page-header"
+>
+  <h1
+    class="md:hidden p-4 "
+  >
+    Fiona Kelly
+  </h1>
+  <div
+    class="hidden md:flex w-screen  flex-row  justify-end pr-4"
+  >
+    <button
+      class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+    >
+      Home
+    </button>
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+  <button
+    class="false m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
+    data-testid="menu-icon"
+  >
+    <svg
+      class="m-2"
+      height="22"
+      width="30"
+    >
+      <rect
+        height="2"
+        rx="2"
+        style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+        width="30"
+      />
+      <rect
+        height="2"
+        rx="2"
+        style="opacity: 1;"
+        width="30"
+        y="8"
+      />
+      <rect
+        height="2"
+        rx="2"
+        style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+        width="30"
+        y="17"
+      />
+    </svg>
+  </button>
+</div>
+`;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IndexSection from "./indexSection";
 
-const galleryPics: {src: string, width: number, height: number, alt: string, smScreenOnly?: boolean}[] = [
+export const galleryPics: {src: string, width: number, height: number, alt: string, smScreenOnly?: boolean}[] = [
   {
     src: "/images/Fiona-arms-crossed.jpg",
     width: 680,
@@ -45,10 +45,10 @@ const galleryPics: {src: string, width: number, height: number, alt: string, smS
 export default function Gallery() {
   return (
     <IndexSection title="Gallery">
-      <div className=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
+      <div data-testid="gallery-section" className=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {galleryPics.map(i => (
           <div key={i.src} className={i.smScreenOnly ? "m-2 shadow-xl lg:hidden" : "m-2 shadow-xl"}>
-            <Image src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} />
+            <Image src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} data-testid={i.src}/>
           </div>
         ))}
       </div>

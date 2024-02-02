@@ -1,0 +1,668 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> matches snapshot 1`] = `
+<div
+  data-testid="layout-div"
+>
+  <div
+    class="font-display  transition duration-500 ease-out fixed fill-white  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between   text-zinc-100"
+    data-testid="page-header"
+  >
+    <h1
+      class="md:hidden p-4 "
+    >
+      Fiona Kelly
+    </h1>
+    <div
+      class="hidden md:flex w-screen  flex-row  justify-end pr-4"
+    >
+      <button
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        Home
+      </button>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="About"
+      >
+        <p>
+          About
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Listen"
+      >
+        <p>
+          Listen
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Gallery"
+      >
+        <p>
+          Gallery
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Contact"
+      >
+        <p>
+          Contact
+        </p>
+      </a>
+    </div>
+    <button
+      class="false m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
+      data-testid="menu-icon"
+    >
+      <svg
+        class="m-2"
+        height="22"
+        width="30"
+      >
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="opacity: 1;"
+          width="30"
+          y="8"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+          y="17"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class=""
+  >
+    <div
+      class=" w-screen h-screen flex flex-col justify-center overflow-hidden items-center"
+      data-testid="hero-section"
+    >
+      <div
+        class="hidden md:flex z-10  flex-col absolute top-36  md:right-24"
+      >
+        <h1
+          class=" text-zinc-200 text-5xl  font-display"
+        >
+          Fiona Kelly
+        </h1>
+      </div>
+      <div
+        class="overflow-hidden w-[925px] md:w-screen -ml-28 sm:-ml-0 -mt-0 lg:-mt-56 h-screen md:h-[1477px] mx-auto outline"
+      >
+        <img
+          alt="Portrait of Fiona lounging on a couch with her flute."
+          data-nimg="1"
+          decoding="async"
+          height="1477"
+          loading="lazy"
+          sizes=""
+          src="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75"
+          srcset="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75 2x"
+          style="color: transparent;"
+          title="Portrait of Fiona lounging on a couch with her flute."
+          width="1850"
+        />
+      </div>
+    </div>
+    <div
+      class="pt-16 p-12 text-sm flex flex-col items-center  bg-white"
+      name="about"
+    >
+      <div
+        class="flex flex-row w-full"
+        data-testid="index-section"
+      >
+        <h1
+          class="font-5xl my-8 font-display"
+        >
+          About
+        </h1>
+      </div>
+      <div
+        class=" w-full h-full  flex flex-row "
+        data-testid="about-section"
+      >
+        <article
+          class="text-black tracking-wider lg:w-2/3"
+        >
+          <p
+            class="my-2 "
+          >
+            Irish flautist Fiona Kelly has been hailed by the New York Times as a player with “impressive technique and elegant musicianship”.
+          </p>
+          <p
+            class="my-2"
+          >
+            Based in London, Fiona is in demand as an orchestral and chamber musician. She leads a busy freelance career performing as guest principal flute with many of the UK’s leading orchestras including the London Philharmonic Orchestra, the Philharmonia, Royal Philharmonic Orchestra, the Academy of St Martin in the Fields and the Orchestra of the Royal Opera House, Covent Garden amongst others.
+          </p>
+          <p
+            class="my-2"
+          >
+            Solo and chamber music engagements have led to collaborations with ensembles and artists including the Wigmore Soloists, Antje Weithaas, Uri Caine and Håkan Hardenberger. Fiona has performed concertos at the BBC Proms, Rheingau and Heidelberg festivals. With a keen interest in new music, Fiona has premiered and recorded new works by Uri Caine, Stephan Mackey and Ian Wilson.
+          </p>
+          <p
+            class="my-2"
+          >
+            Fiona has a duo with her harpist sister Jean Kelly. They have performed recitals and concertos throughout the U.K. and Ireland. A recent highlight was a recital at the National Concert Hall Chamber Music Series: The Natural World, with a programme titled “Toward the Sea”. The Kelly Sisters often perform works and arrangements of Irish music by their grandfather, composer T.C Kelly.
+          </p>
+          <p
+            class="my-2"
+          >
+            Fiona enjoys regularly returning home to Ireland to the Irish Chamber Orchestra, where she is guest principal flute. Before relocating to London, Fiona was principal flute of the Swedish Chamber Orchestra from 2012-2016.
+          </p>
+          <p
+            class="my-2"
+          >
+            Beginning her studies in Cork with her mother Evelyn Grant and Sabine Ducrot, Fiona went on to complete her studies at Trinity Laban Conservatoire with Anna Noakes, and at The Juilliard School with Robert Langevin.
+          </p>
+          <p
+            class="my-2"
+          >
+            Fiona is a flute professor at Trinity Laban Conservatoire and gives masterclasses at music departments and colleges throughout the UK and Ireland.
+          </p>
+        </article>
+        <div
+          class="hidden lg:inline mx-8"
+        >
+          <img
+            alt="Fiona with flute black and white"
+            data-nimg="1"
+            decoding="async"
+            height="429"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=750&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=750&q=75 2x"
+            style="color: transparent;"
+            width="363"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="pt-16 p-12 text-sm flex flex-col items-center bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50"
+      name="listen"
+    >
+      <div
+        class="flex flex-row w-full"
+        data-testid="index-section"
+      >
+        <h1
+          class="font-5xl my-8 font-display"
+        >
+          Listen
+        </h1>
+      </div>
+      <div
+        class=" w-full flex flex-row flex-wrap items-center justify-center"
+        data-testid="albums-section"
+      >
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw-link"
+          href="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of The Brandenburg Project by Swedish Chamber Orchestra & Thomas Dausgaard"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fbrandenburg-project.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="The Brandenburg Project"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw-link"
+          href="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Folk Songs of the British Isles by Various, including Fiona Kelly & Jean Kelly"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Ffolk-songs.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Folk Songs of the British Isles"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA-link"
+          href="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Wild is the Wind by Ian Wilson"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fwild-is-the-wind.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Wild is the Wind"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw-link"
+          href="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Symphony No. 5: Prokofiev by Santtu-Matias Rouvali & Philharmonia Orchestra"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fprokofiev-symphoy-5.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Symphony No. 5: Prokofiev"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g-link"
+          href="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of A Midsummer Night's Dream by Swedish Chamber Orchestra & Thomas Dausgaard"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fmendelssohn-midsummer.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="A Midsummer Night's Dream"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw-link"
+          href="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Brahms Symphony No. 3 by Swedish Chamber Orchestra & Thomas Dausgaard"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fbrahms-symphony-3.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Brahms Symphony No. 3"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA-link"
+          href="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Brett Dean: Shadow Music by Swedish Chamber Orchestra & Brett Dean"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fdean-swedish.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Brett Dean: Shadow Music"
+            width="250"
+          />
+        </a>
+        <a
+          class=" "
+          data-testid="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw-link"
+          href="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw"
+          target="_blank"
+        >
+          <img
+            alt="Album cover of Mozart: Piano Concertos No. 19 & 27 by Francesco Piemontesi, Andrew Manze & Scottish Chamber Orchestra"
+            class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+            data-nimg="1"
+            decoding="async"
+            height="250"
+            loading="lazy"
+            src="/_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=256&q=75 1x, /_next/image?url=%2Falbums%2Fmozart-piemontesi.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            title="Mozart: Piano Concertos No. 19 & 27"
+            width="250"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      class="pt-16 p-12 text-sm flex flex-col items-center undefined"
+      name="gallery"
+    >
+      <div
+        class="flex flex-row w-full"
+        data-testid="index-section"
+      >
+        <h1
+          class="font-5xl my-8 font-display"
+        >
+          Gallery
+        </h1>
+      </div>
+      <div
+        class=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center"
+        data-testid="gallery-section"
+      >
+        <div
+          class="m-2 shadow-xl"
+        >
+          <img
+            alt="Fiona with flute arms crossed"
+            data-nimg="1"
+            data-testid="/images/Fiona-arms-crossed.jpg"
+            decoding="async"
+            height="270"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75"
+            srcset="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75 2x"
+            style="color: transparent;"
+            width="340"
+          />
+        </div>
+        <div
+          class="m-2 shadow-xl"
+        >
+          <img
+            alt="Fiona with flute close up black and white"
+            data-nimg="1"
+            data-testid="/images/fiona-close-up-bw.jpg"
+            decoding="async"
+            height="375"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="282.5"
+          />
+        </div>
+        <div
+          class="m-2 shadow-xl"
+        >
+          <img
+            alt="Fiona with flute arms crossed"
+            data-nimg="1"
+            data-testid="/images/fiona-flute-table.jpg"
+            decoding="async"
+            height="290"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="290"
+          />
+        </div>
+        <div
+          class="m-2 shadow-xl lg:hidden"
+        >
+          <img
+            alt="Fiona profile photo with flute"
+            data-nimg="1"
+            data-testid="/images/fiona-profile.jpg"
+            decoding="async"
+            height="340"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="260"
+          />
+        </div>
+        <div
+          class="m-2 shadow-xl lg:hidden"
+        >
+          <img
+            alt="Fiona with flute black and white"
+            data-nimg="1"
+            data-testid="/images/fk-bw-flute.jpg"
+            decoding="async"
+            height="343.20000000000005"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="290.40000000000003"
+          />
+        </div>
+        <div
+          class="m-2 shadow-xl"
+        >
+          <img
+            alt="Fiona close up at table with flute"
+            data-nimg="1"
+            data-testid="/images/fiona-close-table.jpg"
+            decoding="async"
+            height="240"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75 2x"
+            style="color: transparent;"
+            width="340"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="pt-16 p-12 text-sm flex flex-col items-center bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50"
+      name="contact"
+    >
+      <div
+        class="flex flex-row w-full"
+        data-testid="index-section"
+      >
+        <h1
+          class="font-5xl my-8 font-display"
+        >
+          Contact
+        </h1>
+      </div>
+      <div
+        class="flex flex-row w-full justify-between  h-[30rem]"
+        data-testid="contact-form"
+      >
+        <form
+          action="#"
+          class="font-sans flex flex-col lg:w-1/2  "
+        >
+          <div
+            class="px-2 "
+          >
+            <p
+              class="my-1"
+            >
+              For concert bookings, please contact 
+              <a
+                class="hover:text-blue-500 underline"
+                href="https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"
+                target="_blank"
+              >
+                The Musicians Answering Service
+              </a>
+              .
+            </p>
+            <p
+              class="my-1"
+            >
+              For all other enquiries, complete the form below.
+            </p>
+          </div>
+          <div
+            class="flex flex-col m-2"
+          >
+            <label
+              class="form-label"
+              for="name-input"
+            >
+              Name
+            </label>
+            <input
+              class="text-black border border-black rounded-md w-full p-1"
+              id="name-input"
+              name="name"
+              type="text"
+              value=""
+            />
+            <div
+              class="h-6"
+            />
+          </div>
+          <div
+            class="flex flex-col m-2"
+          >
+            <label
+              class="form-label"
+              for="email-input"
+            >
+              Email
+            </label>
+            <input
+              class="text-black border border-black rounded-md w-full p-1"
+              id="email-input"
+              name="email"
+              type="email"
+              value=""
+            />
+            <div
+              class="h-6"
+            />
+          </div>
+          <div
+            class="flex flex-col m-2 mb-0"
+          >
+            <label
+              class="form-label"
+              for="msg-text"
+            >
+              Message
+            </label>
+            <textarea
+              class=" text-black border border-black rounded-md w-full p-1"
+              id="msg-text"
+              maxlength="500"
+              multiline="6"
+              name="message"
+              rows="4"
+              type="textarea"
+            />
+            <div
+              class="h-6"
+            />
+          </div>
+          <button
+            class="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end"
+            id="submit-button"
+            type="submit"
+          >
+            Submit
+          </button>
+          <div />
+        </form>
+        <div
+          class="hidden lg:flex mx-12"
+        >
+          <img
+            alt="Fiona profile photo with flute"
+            data-nimg="1"
+            decoding="async"
+            height="425"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=750&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=750&q=75 2x"
+            style="color: transparent;"
+            width="325"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t border-t-zinc-300 bg-zinc-100"
+    data-testid="footer-section"
+  >
+    <div
+      class="flex flex-col items-center justify-center"
+    >
+      <a
+        class=" text-2xl twitter-blue p-1 hover:text-blue-500 hover:cursor-pointer active:text-blue-400"
+        href="https://twitter.com/fizzlekelly"
+        target="_blank"
+        title="Link to Fiona's Twitter page"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+          />
+        </svg>
+      </a>
+      <button
+        class="hover:underline font-display text-sm font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        Back to top
+      </button>
+      <a
+        class="text-sm font-light font-display self-end mt-3 text-gray-500 underline hover:text-blue-500"
+        href="https://www.purpleraspberry.uk/"
+        target="_blank"
+      >
+        Purple Rasberry Photography
+      </a>
+    </div>
+  </div>
+</div>
+`;

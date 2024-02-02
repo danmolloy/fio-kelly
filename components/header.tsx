@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
 import MenuIcon from './menuIcon'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
@@ -7,12 +6,6 @@ export const menuItems: {title: string}[] = [
   {
     title: "About",
   },
-  /* {
-    title: "Albums",
-  },
-  {
-    title: "Videos",
-  }, */
   {
     title: "Listen",
   },
@@ -24,9 +17,16 @@ export const menuItems: {title: string}[] = [
   },
 ]
 
-export default function Header({showMenu, setShowMenu, setShowHeader, showHeader}) {
+export type HeaderProps = {
+  showMenu: boolean
+  setShowMenu: () => void
+  setShowHeader: (arg: boolean) => void
+  showHeader: boolean
+}
+
+export default function Header(props: HeaderProps) {
+  const {showMenu, setShowMenu, setShowHeader, showHeader} = props;
   const [scrollPosition, setScrollPosition] = useState(0);
-  //const [showHeader, setShowHeader] = useState(true)
 
   useEffect(() => {
     function handleScroll() {
@@ -49,8 +49,8 @@ export default function Header({showMenu, setShowMenu, setShowHeader, showHeader
 
 
   return (
-    <div 
-    
+    <div
+    data-testid="page-header" 
     className={!showHeader && scrollPosition < 750
       ? "font-display -translate-y-full transition duration-1000 fill-white fixed z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between  text-zinc-100"  
       : !showHeader
@@ -64,7 +64,7 @@ export default function Header({showMenu, setShowMenu, setShowHeader, showHeader
           Home
         </button>
       {menuItems.map(i => (
-        <Link onClick={() => setTimeout(() => setShowHeader(false), 750)} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title} className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400'>
+        <Link data-testid={i.title} onClick={() => setTimeout(() => setShowHeader(false), 750)} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title} className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400'>
           <p>{i.title}</p>
         </Link>
       ))}

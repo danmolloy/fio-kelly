@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> matches snapshot 1`] = `
+<div
+  data-testid="layout-div"
+>
+  <div
+    class="font-display  transition duration-500 ease-out fixed fill-white  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between   text-zinc-100"
+    data-testid="page-header"
+  >
+    <h1
+      class="md:hidden p-4 "
+    >
+      Fiona Kelly
+    </h1>
+    <div
+      class="hidden md:flex w-screen  flex-row  justify-end pr-4"
+    >
+      <button
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        Home
+      </button>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="About"
+      >
+        <p>
+          About
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Listen"
+      >
+        <p>
+          Listen
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Gallery"
+      >
+        <p>
+          Gallery
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="Contact"
+      >
+        <p>
+          Contact
+        </p>
+      </a>
+    </div>
+    <button
+      class="false m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
+      data-testid="menu-icon"
+    >
+      <svg
+        class="m-2"
+        height="22"
+        width="30"
+      >
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="opacity: 1;"
+          width="30"
+          y="8"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+          y="17"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class=""
+  >
+    <div
+      data-testid="mock-children"
+    />
+  </div>
+  <div
+    class="z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t border-t-zinc-300 bg-zinc-100"
+    data-testid="footer-section"
+  >
+    <div
+      class="flex flex-col items-center justify-center"
+    >
+      <a
+        class=" text-2xl twitter-blue p-1 hover:text-blue-500 hover:cursor-pointer active:text-blue-400"
+        href="https://twitter.com/fizzlekelly"
+        target="_blank"
+        title="Link to Fiona's Twitter page"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 1024 1024"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+          />
+        </svg>
+      </a>
+      <button
+        class="hover:underline font-display text-sm font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        Back to top
+      </button>
+      <a
+        class="text-sm font-light font-display self-end mt-3 text-gray-500 underline hover:text-blue-500"
+        href="https://www.purpleraspberry.uk/"
+        target="_blank"
+      >
+        Purple Rasberry Photography
+      </a>
+    </div>
+  </div>
+</div>
+`;

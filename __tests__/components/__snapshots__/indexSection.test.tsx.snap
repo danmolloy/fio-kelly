@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IndexSection /> matches snapshot 1`] = `
+<div
+  class="flex flex-row w-full"
+  data-testid="index-section"
+>
+  <h1
+    class="font-5xl my-8 font-display"
+  >
+    Lorem Ipsum
+  </h1>
+</div>
+`;
