@@ -6,7 +6,7 @@ import Image from "next/image";
 import axios from "axios";
 
 export default function ContactSection() {
-  const [sendStatus, setSendStatus] = useState(null)
+  const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
   const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
@@ -36,7 +36,7 @@ export default function ContactSection() {
     })}
     onSubmit={async (values, actions ) => {
 
-      setSendStatus(sendingMsg)
+      setSendStatus("sending")
       await new Promise(resolve => setTimeout(resolve, 1000))
       //fetch('/api/contact', {
       //  method: 'POST',
@@ -50,11 +50,11 @@ export default function ContactSection() {
       .then((res) => {
         console.log('Response received')
         if (res.status === 200) {
-          setSendStatus(sendSuccess)
+          setSendStatus("success")
           actions.setSubmitting(false)
           actions.resetForm()
         } else {
-          setSendStatus(sendFail)
+          setSendStatus("err")
         }
         })
       }}> 
@@ -111,7 +111,13 @@ export default function ContactSection() {
           </div>
         <button id="submit-button" type='submit' className="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end">Submit</button>
         <div>
-        {sendStatus}
+        {sendStatus === "sending" 
+        ? sendingMsg
+        : sendStatus === "err" 
+        ? sendFail
+        : sendStatus === "success" 
+        ? sendSuccess
+        : null}
       </div>
       </Form> )}
     </Formik>
