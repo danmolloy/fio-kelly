@@ -8,11 +8,11 @@ import axios from "axios";
 export default function ContactSection() {
   const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
-  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message failed to send.</h2> <p id="dialog-desc">Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
-  const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
+  const sendSuccess = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message recieved!</h2><p id="dialog-desc">I will get back to you as soon as possible.</p></div>)
 
-  const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+  const sendingMsg = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message sending...</h2><p id="dialog-desc">Please wait.</p></div>)
 
   return (
     <IndexSection title="Contact" classNames="bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50">
@@ -38,14 +38,6 @@ export default function ContactSection() {
 
       setSendStatus("sending")
       await new Promise(resolve => setTimeout(resolve, 1000))
-      //fetch('/api/contact', {
-      //  method: 'POST',
-      //  headers: {
-      //    'Accept': 'application/json, text/plain, */*',
-      //    'Content-Type': 'application/json'
-      //  },
-      //  body: JSON.stringify(values)
-      //})
       axios.post("/api/contact", values)
       .then((res) => {
         console.log('Response received')
@@ -122,7 +114,7 @@ export default function ContactSection() {
       </Form> )}
     </Formik>
     <div className="hidden lg:flex mx-12">
-      <Image alt="Fiona profile photo with flute" src={"/images/fiona-profile.jpg"} width="325" height="425" />
+      <Image alt="Fiona in a black dress, looking to the side and holding her flute." src={"/images/fiona-profile.jpg"} width="325" height="425" />
     </div>
     </div>
     </IndexSection>

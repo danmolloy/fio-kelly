@@ -16,10 +16,10 @@ export default function Menu(props: MenuProps) {
           Home
         </button>
       {menuItems.map(i => (
-        <Link onClick={() => {setShowMenu(false);  setTimeout(() => setShowHeader(false), 1000)}} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title}>
-          <div className='py-4 m-4 flex flex-col text-black  items-center justify-center hover:cursor-pointer hover:text-amber-500 active:text-amber-400'>
+        <Link className='flex items-center justify-center' onClick={() => {setShowMenu(false);  setTimeout(() => setShowHeader(false), 1000)}} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title}>
+          <button className=' w-full py-4 m-4 flex flex-col text-black  items-center justify-center hover:cursor-pointer hover:text-amber-500 active:text-amber-400'>
             {i.title}
-          </div>
+          </button>
         </Link>
       ))}
       </div>

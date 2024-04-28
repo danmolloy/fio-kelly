@@ -34,7 +34,7 @@ export default function AboutSection() {
       </p>
       </article>
       <div className="hidden lg:inline mx-8">
-        <Image alt="Fiona with flute black and white" width="363" height="429" src="/images/fk-bw-flute.jpg" />
+        <Image alt="Grayscale silhouette of Fiona holding her flute" width="363" height="429" src="/images/fk-bw-flute.jpg" />
       </div>
       </div>
     </IndexSection>
