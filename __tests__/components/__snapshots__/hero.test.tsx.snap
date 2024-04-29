@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HeroSection /> matches snapshot 1`] = `
-<div
+<section
   class=" w-screen h-screen flex flex-col justify-center overflow-hidden items-center"
   data-testid="hero-section"
 >
@@ -31,5 +31,5 @@ exports[`<HeroSection /> matches snapshot 1`] = `
       width="1850"
     />
   </div>
-</div>
+</section>
 `;

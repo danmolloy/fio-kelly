@@ -17,7 +17,7 @@ exports[`<Layout /> matches snapshot 1`] = `
       class="hidden md:flex w-screen  flex-row  justify-end pr-4"
     >
       <button
-        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        class="my-6 p-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
       >
         Home
       </button>
@@ -25,33 +25,41 @@ exports[`<Layout /> matches snapshot 1`] = `
         class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
         data-testid="About"
       >
-        <p>
+        <button
+          class="p-2"
+        >
           About
-        </p>
+        </button>
       </a>
       <a
         class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
         data-testid="Listen"
       >
-        <p>
+        <button
+          class="p-2"
+        >
           Listen
-        </p>
+        </button>
       </a>
       <a
         class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
         data-testid="Gallery"
       >
-        <p>
+        <button
+          class="p-2"
+        >
           Gallery
-        </p>
+        </button>
       </a>
       <a
         class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
         data-testid="Contact"
       >
-        <p>
+        <button
+          class="p-2"
+        >
           Contact
-        </p>
+        </button>
       </a>
     </div>
     <button
@@ -93,7 +101,7 @@ exports[`<Layout /> matches snapshot 1`] = `
       data-testid="mock-children"
     />
   </div>
-  <div
+  <section
     class="z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t border-t-zinc-300 bg-zinc-100"
     data-testid="footer-section"
   >
@@ -133,6 +141,6 @@ exports[`<Layout /> matches snapshot 1`] = `
         Purple Rasberry Photography
       </a>
     </div>
-  </div>
+  </section>
 </div>
 `;

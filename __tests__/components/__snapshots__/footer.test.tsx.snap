@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> matches snapshot 1`] = `
-<div
+<section
   class="z-10 h-24 bottom-0 flex flex-row items-center justify-center border-t border-t-zinc-300 bg-zinc-100"
   data-testid="footer-section"
 >
@@ -41,5 +41,5 @@ exports[`<Footer /> matches snapshot 1`] = `
       Purple Rasberry Photography
     </a>
   </div>
-</div>
+</section>
 `;

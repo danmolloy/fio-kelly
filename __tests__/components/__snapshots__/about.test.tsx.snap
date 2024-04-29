@@ -48,7 +48,7 @@ exports[`<About /> matches snapshot 1`] = `
     class="hidden lg:inline mx-8"
   >
     <img
-      alt="Fiona with flute black and white"
+      alt="Grayscale silhouette of Fiona holding her flute"
       data-nimg="1"
       decoding="async"
       height="429"

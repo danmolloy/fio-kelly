@@ -106,7 +106,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
     class="hidden lg:flex mx-12"
   >
     <img
-      alt="Fiona profile photo with flute"
+      alt="Fiona in a black dress, looking to the side and holding her flute."
       data-nimg="1"
       decoding="async"
       height="425"
