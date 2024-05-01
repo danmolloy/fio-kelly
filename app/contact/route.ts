@@ -2,9 +2,10 @@ const PASSWORD = process.env.PASSWORD
 const FROM_EMAIL = process.env.FROM_EMAIL
 const TO_EMAIL = process.env.TO_EMAIL
 
-export default async function (req, res) {
+export async function POST(request: Request) {
 
-  let nodemailer = require('nodemailer')
+  const req = await request.json()
+  let nodemailer = require('nodemailer')  
 
   const transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com", // hostname
@@ -24,9 +25,9 @@ export default async function (req, res) {
 const mailData = {
   from: FROM_EMAIL,
   to: TO_EMAIL,
-  subject: `Message from ${req.body.name}`,
-  text: `${req.body.message} | Sent from ${req.body.email}`,
-  html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
+  subject: `Message from ${req.name}`,
+  text: `${req.message} | Sent from ${req.email}`,
+  html: `<div>${req.message}</div><p>Sent from: ${req.email}</p>`
 }
 
 await new Promise((resolve, reject) => {
@@ -43,7 +44,6 @@ await new Promise((resolve, reject) => {
 
 })
 
+return new Response("Success!", {status: 200})
 
-res.status(200)
-res.send("Message Send Successful")
 }

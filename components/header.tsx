@@ -64,7 +64,7 @@ export default function Header(props: HeaderProps) {
           Home
         </button>
       {menuItems.map(i => (
-        <Link data-testid={i.title} onClick={() => setTimeout(() => setShowHeader(false), 750)} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title} className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400'>
+        <Link href='/' data-testid={i.title} onClick={() => setTimeout(() => setShowHeader(false), 750)} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title} className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400'>
           <button className='p-2'>{i.title}</button>
         </Link>
       ))}

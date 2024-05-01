@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom"
-import { render, screen } from "@testing-library/react"
+import { act, fireEvent, render, screen } from "@testing-library/react"
 import Home from "../../app/page"
 
 describe("<Home />", () => {
@@ -29,6 +29,14 @@ describe("<Home />", () => {
   it("<ContactSection /> is in the document", () => {
     const contactSection = screen.getByTestId("contact-form")
     expect(contactSection).toBeInTheDocument()
+  })
+  it("shows menu on icon click", () => {
+    const menuIcon = screen.getByTestId('menu-icon')
+    act(() => {
+      fireEvent.click(menuIcon)
+    })
+    const menuDiv = screen.getByTestId("menu-div")
+    expect(menuDiv).toBeInTheDocument()
   })
   it("matches snapshot", () => {
     const homePage = screen.getByTestId("layout-div")

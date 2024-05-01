@@ -19,6 +19,7 @@ export default function MenuIcon(props: MenuIconProps) {
           <animated.rect style={props2} y="8" width="30" height="2" rx="2"/>
           <animated.rect style={props3} y="17" width="30" height="2" rx="2"/>
         </svg>
+        <p className='hidden'>Menu</p>
       </button>
   )
 }
