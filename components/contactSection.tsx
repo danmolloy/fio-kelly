@@ -100,7 +100,7 @@ export default function ContactSection() {
           </ErrorMessage>
           </div>
           </div>
-        <button id="submit-button" type='submit' className="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end">Submit</button>
+        <button disabled={props.isSubmitting} id="submit-button" type='submit' className="disabled:opacity-40 disabled:hover:cursor-default hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end">Submit</button>
         <div>
         {sendStatus === "sending" 
         ? sendingMsg
