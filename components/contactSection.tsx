@@ -46,6 +46,7 @@ export default function ContactSection() {
           actions.resetForm()
         } else {
           setSendStatus("err")
+          actions.setSubmitting(false)
         }
         })
       }}> 
