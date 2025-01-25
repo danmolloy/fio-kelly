@@ -1,49 +1,42 @@
-const PASSWORD = process.env.PASSWORD
-const FROM_EMAIL = process.env.FROM_EMAIL
+import { NextResponse } from "next/server";
+
+const sgMail = require('@sendgrid/mail');
+
 const TO_EMAIL = process.env.TO_EMAIL
 
-export async function POST(request: Request) {
 
-  const req = await request.json()
-  let nodemailer = require('nodemailer')  
-
-  const transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com", // hostname
-    secureConnection: false, // TLS requires secureConnection to be false
-    port: 587, // port for secure SMTP
-    tls: {
-       ciphers:'SSLv3'
-    },
-    auth: {
-      user: FROM_EMAIL,
-      pass: PASSWORD,
-    },
-  });
-  console.log(req.body)
+export async function POST(
+  request: Request 
+) {
+  const req = await request.json();
+  console.log(req)
 
 
-const mailData = {
-  from: FROM_EMAIL,
-  to: TO_EMAIL,
-  subject: `Message from ${req.name}`,
-  text: `${req.message} | Sent from ${req.email}`,
-  html: `<div>${req.message}</div><p>Sent from: ${req.email}</p>`
-}
+  const emailData = {
+    from: process.env.FROM_EMAIL,
+    personalizations: [
+      {
+        to: TO_EMAIL,
+        dynamic_template_data: {
+          toName: "Fiona",
+          name: req.name, 
+          email: req.email, 
+          message: req.message
+        },
+      },
+    ],
+    template_id: "d-b9231cb1c21e4462af1d2da00dcb6827",
+  };
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-await new Promise((resolve, reject) => {
-
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) {
-      console.log(err)
-      reject(err)
-    } else {
-      console.log(info)
-      resolve(info)
-    }
-  })
-
-})
-
-return new Response("Success!", {status: 200})
-
+  try {
+    const data = await sgMail.send(emailData);
+    return NextResponse.json({ ...data, success: true }, { status: 201 });
+  } catch (e: any) {
+    console.log(e)
+    return NextResponse.json(
+      { error: e.message || 'An unexpected error occurred', success: false },
+      { status: 500 }
+    );
+  }
 }

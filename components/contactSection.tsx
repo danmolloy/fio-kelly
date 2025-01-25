@@ -39,16 +39,21 @@ export default function ContactSection() {
       setSendStatus("sending")
       await new Promise(resolve => setTimeout(resolve, 1000))
       axios.post("/contact", values)
-      .then((res) => {
-        if (res.status === 200) {
-          setSendStatus("success")
-          actions.setSubmitting(false)
-          actions.resetForm()
-        } else {
-          setSendStatus("err")
-          actions.setSubmitting(false)
-        }
-        })
+      .then(() => {
+        setSendStatus("success")
+        actions.resetForm()
+      })
+      .catch((error) => {
+        setSendStatus("err")
+        const errorMessage =
+          error.response.data.error || 'An unexpected error occurred.';
+        actions.setStatus(errorMessage);
+      })
+      .finally(() => {
+        actions.setSubmitting(false);
+      });
+      
+        
       }}> 
       {(props) => (
       <Form className="font-sans flex flex-col lg:w-1/2  ">
