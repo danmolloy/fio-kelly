@@ -57,11 +57,11 @@ export default function ContactSection() {
       }}> 
       {(props) => (
       <Form className="font-sans flex flex-col lg:w-1/2  ">
-          <div className='px-2 '>
+          <div className=' mb-2 '>
           <p className='my-1'>For concert bookings, please contact <a target="_blank" href={"https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"} className="hover:text-blue-500 underline">The Musicians Answering Service</a>.</p>
           <p className='my-1'>For all other enquiries, complete the form below.</p>
           </div>
-          <div className="flex flex-col m-2">
+          <div className="flex flex-col my-1">
           <label htmlFor='name-input' className="form-label">Name</label>
           <Field 
             id="name-input" 
@@ -74,7 +74,7 @@ export default function ContactSection() {
           </ErrorMessage>
           </div>
           </div>
-          <div className="flex flex-col m-2">
+          <div className="flex flex-col my-1">
           <label htmlFor='email-input' className="form-label">Email</label>
           <Field
             id="email-input" 
@@ -87,7 +87,7 @@ export default function ContactSection() {
           </ErrorMessage>
           </div>
           </div>
-          <div className="flex flex-col m-2 mb-0">
+          <div className="flex flex-col my-1 mb-0">
           <label htmlFor='msg-text' className="form-label">Message</label>
           <Field 
           multiline="6"

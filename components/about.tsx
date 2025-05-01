@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <IndexSection  title={"About"} classNames=" bg-white">
       <div data-testid="about-section" className=" w-full h-full  flex flex-row ">
-      <article className="text-black tracking-wider lg:w-2/3">
+      <article className="text-black text-base tracking-wider lg:w-2/3 font-sans">
       <p className="my-2 ">
       Irish flautist Fiona Kelly has been hailed by the New York Times as a player with “impressive technique and elegant musicianship”.</p>
       <p className="my-2">
