@@ -1,5 +1,7 @@
 import Image from "next/image";
 import IndexSection from "./indexSection";
+import HalfSpeedScroll from "./halfScroll";
+import GalleryScroll from "./galleryScroll";
 
 export const galleryPics: {src: string, width: number, height: number, alt: string, smScreenOnly?: boolean}[] = [
   {
@@ -43,12 +45,15 @@ export const galleryPics: {src: string, width: number, height: number, alt: stri
 ]
 
 export default function Gallery() {
+  
   return (
     <IndexSection title="Gallery">
-      <div data-testid="gallery-section" className=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
+      <div data-testid="gallery-section" className="relative w-full flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {galleryPics.map(i => (
-          <div key={i.src} className={i.smScreenOnly ? "m-2 shadow-xl lg:hidden" : "m-2 shadow-xl"}>
-            <Image src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} data-testid={i.src}/>
+          <div key={i.src} className={i.smScreenOnly ? "m-2 my-12 lg:hidden  overflow-hidden" : "m-2 my-12  overflow-hidden"}>
+            <GalleryScroll>
+            <Image className=" " src={i.src} width={i.width/2} height={i.height/2} alt={i.alt} data-testid={i.src}/>
+            </GalleryScroll>
           </div>
         ))}
       </div>
