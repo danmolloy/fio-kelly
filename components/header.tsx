@@ -51,7 +51,11 @@ export default function Header(props: HeaderProps) {
   return (
     <div
     data-testid="page-header" 
-    className={!showHeader && scrollPosition < 750
+    className={
+      showMenu 
+      ?      "font-display  transition duration-500 ease-out fixed fill-white  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between   text-white "
+
+      : !showHeader && scrollPosition < 750
       ? "font-display -translate-y-full transition duration-1000 fill-white fixed z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between  text-zinc-100"  
       : !showHeader
       ? "font-display -translate-y-full transition duration-1000 bg-white fixed z-30 h-16 w-screen top-0 flex flex-row items-center justify-between shadow fill-black text-black"  

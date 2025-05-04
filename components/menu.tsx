@@ -13,8 +13,9 @@ export default function Menu(props: MenuProps) {
 
   return (
 <div data-testid="menu-div"   className={`fixed bottom-0 left-0 w-screen min-h-screen bg-black z-20 flex flex-col rounded-tl  text-2xl transition-transform duration-500 ease-in-out ${showMenu ? 'translate-y-0' : 'translate-y-full'}`}>
-<div className='flex flex-col w-full justify-evenly font-display mt-16'>
-  <div className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out 
+<div className='w-full h-20'/>
+<div className='flex flex-col w-full justify-evenly font-display '>
+  {/* <div className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out 
           ${showMenu ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
            `} >
 
@@ -27,7 +28,7 @@ export default function Menu(props: MenuProps) {
     }`}
     style={{ transitionDelay: `100ms` }} // delay a bit after the text slide
 />
-  </div>
+  </div> */}
       {menuItems.map((i, index) => (
         <Link  
         href='/' 
