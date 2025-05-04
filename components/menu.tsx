@@ -1,5 +1,6 @@
 import { Link, animateScroll as scroll } from 'react-scroll'
 import { menuItems } from './header'
+import { useState } from 'react'
 
 export type MenuProps = {
   setShowMenu: (i: boolean) => void
@@ -9,17 +10,40 @@ export type MenuProps = {
 
 export default function Menu(props: MenuProps) {
   const { showMenu, setShowMenu,setShowHeader } = props;
+
   return (
-    <div data-testid="menu-div" className={`${showMenu ? "opacity-90" : "opacity-0" } ease-out transition duration-300 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen  right-0 shadow text-2xl`}>
-      <div className='flex flex-col w-full justify-evenly font-display mt-16'>
-      <button className='py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-amber-500 active:text-amber-400' onClick={() => {setShowMenu(false); scroll.scrollToTop({ smooth: true, duration: 500 })}}>
+<div data-testid="menu-div"   className={`fixed bottom-0 left-0 w-screen min-h-screen bg-black z-20 flex flex-col rounded-tl  text-2xl transition-transform duration-500 ease-in-out ${showMenu ? 'translate-y-0' : 'translate-y-full'}`}>
+<div className='flex flex-col w-full justify-evenly font-display mt-16'>
+  <div className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out 
+          ${showMenu ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
+           `} >
+
+      <button className='w-full px-12 py-4 m-4 flex flex-col text-white  items-end justify-center hover:text-amber-500 active:text-amber-400' onClick={() => {setShowMenu(false); scroll.scrollToTop({ smooth: true, duration: 500 })}}>
           Home
         </button>
-      {menuItems.map(i => (
-        <Link href='/' className='flex items-center justify-center' onClick={() => {setShowMenu(false);  setTimeout(() => setShowHeader(false), 1000)}} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title}>
-          <button className=' w-full py-4 m-4 flex flex-col text-black  items-center justify-center hover:cursor-pointer hover:text-amber-500 active:text-amber-400'>
+        <div
+    className={`h-0.5 bg-white mt-2 transition-all duration-500 ease-out self-start mx-8 ${
+      showMenu ? 'w-[90vw]' : 'w-0'
+    }`}
+    style={{ transitionDelay: `100ms` }} // delay a bit after the text slide
+/>
+  </div>
+      {menuItems.map((i, index) => (
+        <Link  
+        href='/' 
+        className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out
+          ${showMenu ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
+           `} 
+          onClick={() => {setShowMenu(false);  setTimeout(() => setShowHeader(false), 1000)}} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title}>
+          <button className='px-12 w-full py-4 m-4 flex flex-col text-white  items-end justify-center hover:cursor-pointer hover:text-amber-500 active:text-amber-400'>
             {i.title}
           </button>
+          <div
+    className={`h-0.5 bg-white mt-2 transition-all duration-500 ease-out self-start mx-8 ${
+      showMenu ? 'w-[90vw]' : 'w-0'
+    }`}
+    style={{ transitionDelay: `${index * 100 + 200}ms` }} // delay a bit after the text slide
+/>
         </Link>
       ))}
       </div>

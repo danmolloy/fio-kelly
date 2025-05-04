@@ -15,8 +15,8 @@ export default function Layout({ children}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header showHeader={showHeader} setShowHeader={(arg) => setShowHeader(arg)} setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} />
-      {showMenu && <Menu setShowHeader={(arg) => setShowHeader(arg)} showMenu={showMenu} setShowMenu={(arg) => setShowMenu(arg)}/>}
-      <div className={showMenu ? "blur" : ""}>
+      <Menu setShowHeader={(arg) => setShowHeader(arg)} showMenu={showMenu} setShowMenu={(arg) => setShowMenu(arg)}/>
+      <div >
         {children}
       </div>
       <Footer />

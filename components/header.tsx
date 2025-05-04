@@ -58,7 +58,7 @@ export default function Header(props: HeaderProps) {
       : scrollPosition < 750
       ? "font-display  transition duration-500 ease-out fixed fill-white  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between   text-zinc-100"
       : "font-display transition duration-500 ease-out fixed  bg-white z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between shadow fill-black text-black "}>
-      <h1 className={showMenu ? "md:hidden p-4 text-black" : 'md:hidden p-4 '}>Fiona Kelly</h1>
+      <h1 className={'md:hidden p-4 '}>Fiona Kelly</h1>
       <div className='hidden md:flex w-screen  flex-row  justify-end pr-4'>
         <button className='my-6 p-2 text-lg font-light hover:cursor-pointer active:text-zinc-400' onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}>
           Home
