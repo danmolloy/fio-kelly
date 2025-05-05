@@ -13,8 +13,8 @@ export default function Menu(props: MenuProps) {
 
   return (
 <div data-testid="menu-div"   className={`fixed bottom-0 left-0 w-screen min-h-screen bg-black z-20 flex flex-col rounded-tl  text-2xl transition-transform duration-500 ease-in-out ${showMenu ? 'translate-y-0' : 'translate-y-full'}`}>
-<div className='w-full h-20'/>
 <div className='flex flex-col w-full justify-evenly font-display '>
+<div className='w-full h-32'/>
   {/* <div className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out 
           ${showMenu ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
            `} >

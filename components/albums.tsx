@@ -64,13 +64,13 @@ export default function Albums() {
   const [selected, setSelected] = useState<number|null>(null)
 
   return (
-    <IndexSection title={"Listen"} classNames={/* selected !== null ? `bg-zinc-200 ease-in-out duration-500 transform` :  */`ease-in-out duration-500 transform bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50`}>
+    <IndexSection title={"Listen"} classNames={selected !== null ? `bg-zinc-200 ease-in-out duration-500 transform` : `ease-in-out duration-500 transform bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50`}>
       <div data-testid="albums-section" className=" w-full flex flex-row flex-wrap items-center justify-center">
         {albumsArr.map((i, index) => (
-          <div key={i.src} onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} className={`${/* selected !== null && selected !== index && `bg-zinc-100` */''} m-4`}>
+          <div key={i.src} /* onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} */ className={`${selected !== null && selected !== index && `bg-zinc-100`} m-4`}>
 
 
-            <Image className={`shadow-2xl  hover:shadow-zinc-400 active:shadow-zinc-300 ${/* selected !== null && selected !== index && 'opacity-0 border border-black border-opacity-100' */''} ease-in-out duration-200 transform`} src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
+            <Image className={`shadow-2xl  hover:shadow-zinc-400 active:shadow-zinc-300 ${selected !== null && selected !== index && 'opacity-0 border border-black border-opacity-100'} ease-in-out duration-200 transform `} src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
 
           </div>
           
