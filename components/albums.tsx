@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IndexSection from "./indexSection";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaSpotify } from "react-icons/fa";
 
 
@@ -63,12 +63,41 @@ export const albumsArr: {
 
 export default function Albums() {
   const [selected, setSelected] = useState<number|null>(null)
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        const index = Number(entry.target.getAttribute("data-index"));
+        if (!entry.isIntersecting && selected === index) {
+          setSelected(null);
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.5,
+    }
+  );
+
+  imageRefs.current.forEach((el) => {
+    if (el) observer.observe(el);
+  });
+
+  return () => {
+    observer.disconnect();
+  };
+}, [selected]);
 
   return (
     <IndexSection title={"Listen"} classNames={/* selected !== null ? `bg-zinc-200 ease-in-out duration-500 transform` :  */`ease-in-out duration-500 transform bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50`}>
       <div data-testid="albums-section" className=" w-full flex flex-row flex-wrap items-start justify-evenly">
         {albumsArr.map((i, index) => (
-          <div  key={i.src} onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} className={` m-1 mx-3 flex flex-col items-center  justify-center `} >
+          <div
+            data-index={index}
+            ref={el => (imageRefs.current[index] = el)}
+            key={i.src} /* onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} */ className={` m-1 mx-3 flex flex-col items-center  justify-center `} >
 
 
             <Image onClick={() => setSelected(selected === index ? null : index)} className={`shadow-2xl  ${selected !== null && selected !== index && 'bg-zinc-100 opacity-0  ease-in-out duration-500 transform'} self-start ease-in-out duration-500 transform `} src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>

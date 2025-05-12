@@ -29,7 +29,7 @@ export default function HeroSection() {
         className="fixed inset-0  bg-black pointer-events-none"
         style={{ opacity }}
       />
-        <Image title="Portrait of Fiona lounging on a couch with her flute." alt="Portrait of Fiona lounging on a couch with her flute." src="/images/fiona-chaise.jpg"  width={3700/2} height={2954/2} sizes=""  /> 
+        <Image title="Fiona Kelly" alt="Fiona Kelly" src="/images/fiona-chaise.jpg"  width={3700/2} height={2954/2} sizes=""  /> 
       </HalfSpeedScroll>
       </div>
     </section>
