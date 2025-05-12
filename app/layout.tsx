@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import { Raleway, Poiret_One } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/react"
 
-const raleway = Raleway({weight: '400', subsets: ['latin'], variable: "--font-raleway"})
+const raleway = Raleway({weight: ['400', '500', '600', '700', '800'], subsets: ['latin'], variable: "--font-raleway"})
 const poiretOne = Poiret_One({weight: '400', subsets: ["latin"], variable:"--font-poiret"})
  
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${poiretOne.variable}`}>
+      <body className={`${raleway.variable} ${poiretOne.variable} font-sans`}>
         {children}
       </body>
       <Analytics />
