@@ -100,7 +100,7 @@ export default function Albums() {
             key={i.src} /* onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} */ className={` m-1 mx-3 flex flex-col items-center  justify-center `} >
 
 
-            <Image onClick={() => setSelected(selected === index ? null : index)} className={`shadow-2xl  ${selected !== null && selected !== index && 'bg-zinc-100 opacity-0  ease-in-out duration-500 transform'} self-start ease-in-out duration-500 transform `} src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
+            <Image onClick={() => setSelected(selected === index ? null : index)} className={`shadow-2xl hover:cursor-pointer  ${selected !== null && selected !== index && 'bg-zinc-100 opacity-0  ease-in-out duration-500 transform'} self-start ease-in-out duration-500 transform `} src={i.src} width={250} height={250} alt={`Album cover of ${i.title} by ${i.artists}`} title={i.title}/>
             <div className={`${selected === index ? "opacity-100 " : "opacity-0 "} self-start max-w-[250px] p-1`}>
               <p className="flex flex-wrap font-semibold text-base">
                 {i.title}
