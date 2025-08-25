@@ -8,11 +8,11 @@ import axios from "axios";
 export default function ContactSection() {
   const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
-  const sendFail = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message failed to send.</h2> <p id="dialog-desc">Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-lg">Message failed to send.</h2> <p id="dialog-desc" className="text-sm">Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
-  const sendSuccess = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message recieved!</h2><p id="dialog-desc">I will get back to you as soon as possible.</p></div>)
+  const sendSuccess = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-lg">Message recieved!</h2><p id="dialog-desc" className="text-sm">I will get back to you as soon as possible.</p></div>)
 
-  const sendingMsg = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-2xl">Message sending...</h2><p id="dialog-desc">Please wait.</p></div>)
+  const sendingMsg = (<div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc"><h2 id="dialog-title" className="text-lg">Message sending...</h2><p id="dialog-desc" className="text-sm">Please wait.</p></div>)
 
   return (
     <IndexSection title="Contact" classNames="bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50">
@@ -59,11 +59,10 @@ export default function ContactSection() {
       <Form className="font-sans flex flex-col lg:w-1/2  ">
           <div className=' mb-2 '>
           <p className='my-1'>For concert bookings, please contact <a target="_blank" href={"https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"} className="hover:text-blue-500 underline">The Musicians Answering Service</a>.</p>
-                    <p className='my-1'>For all other enquiries, please <a className="hover:text-blue-500 underline" href="mailto:fiokelly@gmail.com">send an email</a>.</p>
 
-          {/* <p className='my-1'>For all other enquiries, complete the form below.</p> */}
+          <p className='my-1'>For all other enquiries, complete the form below.</p>
           </div>
-         {/*  <div className="flex flex-col my-1">
+         <div className="flex flex-col my-1">
           <label htmlFor='name-input' className="form-label">Name</label>
           <Field 
             id="name-input" 
@@ -117,11 +116,11 @@ export default function ContactSection() {
         : sendStatus === "success" 
         ? sendSuccess
         : null}
-      </div> */}
+      </div> 
       </Form> )}
     </Formik>
     <div className="hidden lg:flex mx-12">
-      <Image alt="Fiona in a black dress, looking to the side and holding her flute." src={"/images/fiona-profile.jpg"} width="325" height="425" />
+      <Image alt="Fiona Kelly" src={"/images/fiona-profile.jpg"} width="325" height="425" />
     </div>
     </div>
     </IndexSection>
