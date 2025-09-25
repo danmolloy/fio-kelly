@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
 
 const HalfSpeedScroll = ({ children }) => {
   const [offset, setOffset] = useState(0);
@@ -14,14 +14,14 @@ const HalfSpeedScroll = ({ children }) => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // trigger initial position
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const style = {
     transform: `translateY(${offset}px)`,
-    willChange: 'transform',
+    willChange: "transform",
   };
 
   return (

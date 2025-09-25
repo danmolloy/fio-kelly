@@ -10,7 +10,7 @@ Technically, the project has a focus on UI/UX design, performance and accessibil
 - **Disappearing Header** built on scroll event listeners, disappearing from view after a short scroll. It reappears almost immediately on upscroll and is in the initial page render.
 - **Interactive Experience** gently scroll with React Scroll on menu link click, ensuring a smooth user experience. Additionally, the mobile screen menu 'burger' icon transforms into an 'X' icon, giving the website visual interactivity.
 
-### Technical Excellence
+### Technical Overview
 #### Performance Optimization
 Although essentially a static website, measures have been taken to improve performance. This includes:
 - All images use NextJS Image Component, optimizing performance by lazy loading.
@@ -25,12 +25,14 @@ Although essentially a static website, measures have been taken to improve perfo
 - NextJS 14
 - TypeScript
 - Tailwind CSS
-- Formik, Yup and Nodemailer
-- Jest & React Testing Library
-- React Spring & React Scroll
+- Formik, Yup and AWS SES
+- Jest & React Testing Library and Sentry
+- React Spring, React Scroll and Motion
+- ESLint and Prettier
 
 ## Testing
 Unit tests with Jest and React Testing Library achieve a high code coverage threshold (86.31%), focusing on maintaining a consistent UI and critical logic. An array of Jest matchers (e.g., .toBe, .toEqual, .toBeInTheDocument) are leveraged for effective assertions. Predictable UI output is maintained with snapshot tests for all components. Test suites are regularly reviewed to ensure failures are swiftly captured, and the site continues to be manually tested across a variety of screen sizes.
+In addition, Sentry is used to monitor errors to ensure they are caught and resolved quickly.
 
 ## Accessibility
 The site has been created with the aim of an inclusive experience for all users. It is continually tested and improved to adhere to Web Content Accessibility Guidelines (WCAG) 2.0 conformance standards, levering tools such as Google Lighthouse (scoring 100/100), ESLint (including `eslint-plugin-jsx-a11y` extension) and Chrome DevTools.

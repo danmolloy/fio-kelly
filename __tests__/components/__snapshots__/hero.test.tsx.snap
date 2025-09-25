@@ -17,19 +17,27 @@ exports[`<HeroSection /> matches snapshot 1`] = `
   <div
     class="overflow-hidden w-[925px] md:w-screen -ml-28 sm:-ml-0 -mt-0 lg:-mt-56 h-screen md:h-[1477px] mx-auto outline"
   >
-    <img
-      alt="Portrait of Fiona lounging on a couch with her flute."
-      data-nimg="1"
-      decoding="async"
-      height="1477"
-      loading="lazy"
-      sizes=""
-      src="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75 2x"
-      style="color: transparent;"
-      title="Portrait of Fiona lounging on a couch with her flute."
-      width="1850"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <div
+        class="fixed inset-0  bg-black pointer-events-none"
+        style="opacity: 0;"
+      />
+      <img
+        alt="Fiona Kelly"
+        data-nimg="1"
+        decoding="async"
+        height="1477"
+        loading="lazy"
+        sizes=""
+        src="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-chaise.jpg&w=3840&q=75 2x"
+        style="color: transparent;"
+        title="Fiona Kelly"
+        width="1850"
+      />
+    </div>
   </div>
 </section>
 `;

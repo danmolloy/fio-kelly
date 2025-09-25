@@ -6,10 +6,10 @@ exports[`<About /> matches snapshot 1`] = `
   data-testid="about-section"
 >
   <article
-    class="text-black tracking-wider lg:w-2/3"
+    class="text-black text-base tracking-wider lg:w-2/3 font-sans"
   >
     <p
-      class="my-2 "
+      class="my-2"
     >
       Irish flautist Fiona Kelly has been hailed by the New York Times as a player with “impressive technique and elegant musicianship”.
     </p>
@@ -41,7 +41,7 @@ exports[`<About /> matches snapshot 1`] = `
     <p
       class="my-2"
     >
-      Fiona is a flute professor at Trinity Laban Conservatoire and gives masterclasses at music departments and colleges throughout the UK and Ireland.
+      Fiona is a flute professor and currently Interim Head of Woodwind at Trinity Laban Conservatoire. She also gives masterclasses at music departments and colleges throughout the UK and Ireland.
     </p>
   </article>
   <div

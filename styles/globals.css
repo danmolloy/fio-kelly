@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .about-body {
     margin-top: 36rem;
   }
@@ -23,7 +23,7 @@
 }
 
 .menu {
-  animation: slide-in .3s linear;
+  animation: slide-in 0.3s linear;
 }
 
 .fade-in {
@@ -38,15 +38,13 @@
 .about-img {
   animation: fade-in 3s;
 }
-.contact-img{
+.contact-img {
   animation: fade-in 2s;
 }
-
 
 .home-quote {
   animation: fade-in 5s;
 }
-
 
 @keyframes fade-out {
   from {

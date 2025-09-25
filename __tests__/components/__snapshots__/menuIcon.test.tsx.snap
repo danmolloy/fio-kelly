@@ -2,7 +2,7 @@
 
 exports[`<MenuIcon /> matches snapshot 1`] = `
 <button
-  class="fill-black m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
+  class=" m-2 hover:fill-amber-500 active:fill-amber-400  md:hidden"
   data-testid="menu-icon"
 >
   <svg
@@ -31,5 +31,10 @@ exports[`<MenuIcon /> matches snapshot 1`] = `
       y="17"
     />
   </svg>
+  <p
+    class="hidden"
+  >
+    Menu
+  </p>
 </button>
 `;

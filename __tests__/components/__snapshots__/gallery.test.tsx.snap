@@ -2,104 +2,134 @@
 
 exports[`<Gallery /> matches snapshot 1`] = `
 <div
-  class=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-center"
+  class="relative w-full flex flex-col lg:flex-row flex-wrap items-center justify-center"
   data-testid="gallery-section"
 >
   <div
-    class="m-2 shadow-xl"
+    class="m-2 my-12  overflow-hidden"
   >
-    <img
-      alt="Fiona with flute arms crossed"
-      data-nimg="1"
-      data-testid="/images/Fiona-arms-crossed.jpg"
-      decoding="async"
-      height="270"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75"
-      srcset="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75 2x"
-      style="color: transparent;"
-      width="340"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona with flute arms crossed"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/Fiona-arms-crossed.jpg"
+        decoding="async"
+        height="270"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75"
+        srcset="/_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2FFiona-arms-crossed.jpg&w=750&q=75 2x"
+        style="color: transparent;"
+        width="340"
+      />
+    </div>
   </div>
   <div
-    class="m-2 shadow-xl"
+    class="m-2 my-12  overflow-hidden"
   >
-    <img
-      alt="Fiona with flute close up black and white"
-      data-nimg="1"
-      data-testid="/images/fiona-close-up-bw.jpg"
-      decoding="async"
-      height="375"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75 2x"
-      style="color: transparent;"
-      width="282.5"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona with flute close up black and white"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/fiona-close-up-bw.jpg"
+        decoding="async"
+        height="375"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-up-bw.jpg&w=640&q=75 2x"
+        style="color: transparent;"
+        width="282.5"
+      />
+    </div>
   </div>
   <div
-    class="m-2 shadow-xl"
+    class="m-2 my-12  overflow-hidden"
   >
-    <img
-      alt="Fiona with flute arms crossed"
-      data-nimg="1"
-      data-testid="/images/fiona-flute-table.jpg"
-      decoding="async"
-      height="290"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75 2x"
-      style="color: transparent;"
-      width="290"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona with flute arms crossed"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/fiona-flute-table.jpg"
+        decoding="async"
+        height="290"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-flute-table.jpg&w=640&q=75 2x"
+        style="color: transparent;"
+        width="290"
+      />
+    </div>
   </div>
   <div
-    class="m-2 shadow-xl lg:hidden"
+    class="m-2 my-12 lg:hidden  overflow-hidden"
   >
-    <img
-      alt="Fiona profile photo with flute"
-      data-nimg="1"
-      data-testid="/images/fiona-profile.jpg"
-      decoding="async"
-      height="340"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75 2x"
-      style="color: transparent;"
-      width="260"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona profile photo with flute"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/fiona-profile.jpg"
+        decoding="async"
+        height="340"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-profile.jpg&w=640&q=75 2x"
+        style="color: transparent;"
+        width="260"
+      />
+    </div>
   </div>
   <div
-    class="m-2 shadow-xl lg:hidden"
+    class="m-2 my-12 lg:hidden  overflow-hidden"
   >
-    <img
-      alt="Fiona with flute black and white"
-      data-nimg="1"
-      data-testid="/images/fk-bw-flute.jpg"
-      decoding="async"
-      height="343.20000000000005"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75 2x"
-      style="color: transparent;"
-      width="290.40000000000003"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona with flute black and white"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/fk-bw-flute.jpg"
+        decoding="async"
+        height="343.20000000000005"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffk-bw-flute.jpg&w=640&q=75 2x"
+        style="color: transparent;"
+        width="290.40000000000003"
+      />
+    </div>
   </div>
   <div
-    class="m-2 shadow-xl"
+    class="m-2 my-12  overflow-hidden"
   >
-    <img
-      alt="Fiona close up at table with flute"
-      data-nimg="1"
-      data-testid="/images/fiona-close-table.jpg"
-      decoding="async"
-      height="240"
-      loading="lazy"
-      src="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75"
-      srcset="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75 2x"
-      style="color: transparent;"
-      width="340"
-    />
+    <div
+      style="transform: translateY(0px); will-change: transform;"
+    >
+      <img
+        alt="Fiona close up at table with flute"
+        class=" "
+        data-nimg="1"
+        data-testid="/images/fiona-close-table.jpg"
+        decoding="async"
+        height="240"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=384&q=75 1x, /_next/image?url=%2Fimages%2Ffiona-close-table.jpg&w=750&q=75 2x"
+        style="color: transparent;"
+        width="340"
+      />
+    </div>
   </div>
 </div>
 `;

@@ -1,8 +1,12 @@
-import { SESClient, SendEmailCommand, SendEmailCommandInput } from '@aws-sdk/client-ses';
+import {
+  SESClient,
+  SendEmailCommand,
+  SendEmailCommandInput,
+} from "@aws-sdk/client-ses";
 
 // Create SES client
 export const sesClient = new SESClient({
-  region: process.env.AWS_REGION || 'us-east-1',
+  region: process.env.AWS_REGION || "us-east-1",
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
@@ -15,7 +19,11 @@ export interface EmailData {
   message: string;
 }
 
-export async function sendContactFormEmail(emailData: EmailData, toEmail: string, fromEmail: string) {
+export async function sendContactFormEmail(
+  emailData: EmailData,
+  toEmail: string,
+  fromEmail: string,
+) {
   const emailParams: SendEmailCommandInput = {
     Source: fromEmail,
     ReplyToAddresses: [emailData.email], // Add reply-to so you can reply directly to the contact form email
@@ -25,7 +33,7 @@ export async function sendContactFormEmail(emailData: EmailData, toEmail: string
     Message: {
       Subject: {
         Data: `Website Message from ${emailData.name}`,
-        Charset: 'UTF-8',
+        Charset: "UTF-8",
       },
       Body: {
         Html: {
@@ -35,9 +43,9 @@ export async function sendContactFormEmail(emailData: EmailData, toEmail: string
             <p><strong>Name:</strong> ${emailData.name}</p>
             <p><strong>Email:</strong> <a href="mailto:${emailData.email}">${emailData.email}</a></p>
             <p><strong>Message:</strong></p>
-            <p>${emailData.message.replace(/\n/g, '<br>')}</p>
+            <p>${emailData.message.replace(/\n/g, "<br>")}</p>
           `,
-          Charset: 'UTF-8',
+          Charset: "UTF-8",
         },
         Text: {
           Data: `
@@ -47,7 +55,7 @@ Name: ${emailData.name}
 Email: ${emailData.email}
 Message: ${emailData.message}
           `,
-          Charset: 'UTF-8',
+          Charset: "UTF-8",
         },
       },
     },
@@ -55,4 +63,4 @@ Message: ${emailData.message}
 
   const command = new SendEmailCommand(emailParams);
   return await sesClient.send(command);
-} 
+}

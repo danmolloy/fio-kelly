@@ -10,7 +10,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
     class="font-sans flex flex-col lg:w-1/2  "
   >
     <div
-      class="px-2 "
+      class=" mb-2 "
     >
       <p
         class="my-1"
@@ -32,7 +32,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
       </p>
     </div>
     <div
-      class="flex flex-col m-2"
+      class="flex flex-col my-1"
     >
       <label
         class="form-label"
@@ -52,7 +52,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
       />
     </div>
     <div
-      class="flex flex-col m-2"
+      class="flex flex-col my-1"
     >
       <label
         class="form-label"
@@ -72,7 +72,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
       />
     </div>
     <div
-      class="flex flex-col m-2 mb-0"
+      class="flex flex-col my-1 mb-0"
     >
       <label
         class="form-label"
@@ -94,7 +94,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
       />
     </div>
     <button
-      class="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end"
+      class="disabled:opacity-40 disabled:hover:cursor-default hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end"
       id="submit-button"
       type="submit"
     >
@@ -106,7 +106,7 @@ exports[`<ContactSection /> matches snapshot 1`] = `
     class="hidden lg:flex mx-12"
   >
     <img
-      alt="Fiona in a black dress, looking to the side and holding her flute."
+      alt="Fiona Kelly"
       data-nimg="1"
       decoding="async"
       height="425"

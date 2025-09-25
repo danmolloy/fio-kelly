@@ -2,18 +2,16 @@
 
 exports[`<Albums /> matches snapshot 1`] = `
 <div
-  class=" w-full flex flex-row flex-wrap items-center justify-center"
+  class=" w-full flex flex-row flex-wrap items-start justify-evenly"
   data-testid="albums-section"
 >
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw-link"
-    href="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw"
-    target="_blank"
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="0"
   >
     <img
       alt="Album cover of The Brandenburg Project by Swedish Chamber Orchestra & Thomas Dausgaard"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -24,16 +22,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="The Brandenburg Project"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw-link"
-    href="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        The Brandenburg Project
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Swedish Chamber Orchestra & Thomas Dausgaard
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/album/1Qx8aCFUf8I9YSrD89266A?si=Q1Nx2khlT9miP5pvic00fw"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="1"
   >
     <img
       alt="Album cover of Folk Songs of the British Isles by Various, including Fiona Kelly & Jean Kelly"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -44,16 +77,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Folk Songs of the British Isles"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA-link"
-    href="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Folk Songs of the British Isles
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Various, including Fiona Kelly & Jean Kelly
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/track/5ebx7aiNIlcj6iqnpnh69a?si=DLSo7nlNRSak0dIv6HpCKw"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="2"
   >
     <img
       alt="Album cover of Wild is the Wind by Ian Wilson"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -64,16 +132,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Wild is the Wind"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw-link"
-    href="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Wild is the Wind
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Ian Wilson
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/track/2DVIuwdVqu1BQVaODk6tQI?si=Hh1FaK9wSdqFJI__1GKLzA"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="3"
   >
     <img
       alt="Album cover of Symphony No. 5: Prokofiev by Santtu-Matias Rouvali & Philharmonia Orchestra"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -84,16 +187,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Symphony No. 5: Prokofiev"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g-link"
-    href="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Symphony No. 5: Prokofiev
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Santtu-Matias Rouvali & Philharmonia Orchestra
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/album/4qm4iHBsCZul7hSFZQJ0nK?si=cYqWoWw9SZix9qDpz81Fkw"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="4"
   >
     <img
       alt="Album cover of A Midsummer Night's Dream by Swedish Chamber Orchestra & Thomas Dausgaard"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -104,16 +242,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="A Midsummer Night's Dream"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw-link"
-    href="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        A Midsummer Night's Dream
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Swedish Chamber Orchestra & Thomas Dausgaard
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/album/5BFSaFyBhAifMNJo0HTw7Z?si=Yv3p3QkQTfKJ0hwanhVa7g"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="5"
   >
     <img
       alt="Album cover of Brahms Symphony No. 3 by Swedish Chamber Orchestra & Thomas Dausgaard"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -124,16 +297,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Brahms Symphony No. 3"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA-link"
-    href="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Brahms Symphony No. 3
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Swedish Chamber Orchestra & Thomas Dausgaard
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/track/7jZoI2PHAJzY9RdAiysul6?si=8u6CukG8RaOWpNUZReIkBw"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="6"
   >
     <img
       alt="Album cover of Brett Dean: Shadow Music by Swedish Chamber Orchestra & Brett Dean"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -144,16 +352,51 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Brett Dean: Shadow Music"
       width="250"
     />
-  </a>
-  <a
-    class=" "
-    data-testid="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw-link"
-    href="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw"
-    target="_blank"
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Brett Dean: Shadow Music
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Swedish Chamber Orchestra & Brett Dean
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/album/0FA63Lj197qGTdI1tQSX1n?si=J2sMyAdxTJOdbRAc2vypvA"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
+  <div
+    class=" m-1 mx-3 flex flex-col items-center  justify-center "
+    data-index="7"
   >
     <img
       alt="Album cover of Mozart: Piano Concertos No. 19 & 27 by Francesco Piemontesi, Andrew Manze & Scottish Chamber Orchestra"
-      class="shadow-2xl m-4 hover:shadow-zinc-400 active:shadow-zinc-300"
+      class="shadow-2xl hover:cursor-pointer  false self-start ease-in-out duration-500 transform "
       data-nimg="1"
       decoding="async"
       height="250"
@@ -164,6 +407,43 @@ exports[`<Albums /> matches snapshot 1`] = `
       title="Mozart: Piano Concertos No. 19 & 27"
       width="250"
     />
-  </a>
+    <div
+      class="opacity-0  self-start max-w-[250px] p-1"
+    >
+      <p
+        class="flex flex-wrap font-semibold text-base"
+      >
+        Mozart: Piano Concertos No. 19 & 27
+      </p>
+      <p
+        class="flex flex-wrap"
+      >
+        Francesco Piemontesi, Andrew Manze & Scottish Chamber Orchestra
+      </p>
+      <a
+        class="flex flex-row items-center hover:underline"
+        href="https://open.spotify.com/album/5ppe0nPr49exiRuTLW9zQ3?si=s59DWgcWRpCw5KglJqxIOw"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+          />
+        </svg>
+        <p
+          class="ml-1"
+        >
+          Listen on Spotify
+        </p>
+      </a>
+    </div>
+  </div>
 </div>
 `;
