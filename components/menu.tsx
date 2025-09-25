@@ -1,6 +1,7 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { menuItems } from "./header";
-import { useState } from "react";
+
+const ScrollLinkComponent = ScrollLink as any;
 
 export type MenuProps = {
   setShowMenu: (i: boolean) => void;
@@ -33,7 +34,7 @@ export default function Menu(props: MenuProps) {
 />
   </div> */}
         {menuItems.map((i, index) => (
-          <Link
+          <ScrollLinkComponent
             href="/"
             className={` flex flex-col items-center justify-center transform transition duration-700 ease-in-out
           ${showMenu ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}
@@ -59,7 +60,7 @@ export default function Menu(props: MenuProps) {
               }`}
               style={{ transitionDelay: `${index * 100 + 200}ms` }} // delay a bit after the text slide
             />
-          </Link>
+          </ScrollLinkComponent>
         ))}
       </div>
     </div>

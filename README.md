@@ -26,7 +26,7 @@ Although essentially a static website, measures have been taken to improve perfo
 * Regularly verified via Google Lighthouse, consistently scoring 100.
 
 ## Technologies Used
-* **Framework & Language**: Next.js 14, TypeScript
+* **Framework & Language**: Next.js 15, TypeScript
 * **Styling**: Tailwind CSS
 * **Forms & Email**: Formik, Yup, AWS SES
 * **Testing & Monitoring**: Jest, React Testing Library, Sentry

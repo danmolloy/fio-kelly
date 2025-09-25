@@ -1,5 +1,7 @@
-import React from "react";
-import { Element } from "react-scroll";
+import React, { forwardRef } from "react";
+import { Element as ScrollElement } from "react-scroll";
+
+const ScrollElementComponent = ScrollElement as any;
 
 export type IndexSectionProps = {
   children: React.ReactNode;
@@ -12,7 +14,7 @@ export default function IndexSection(props: IndexSectionProps) {
 
   return (
     <section>
-      <Element
+      <ScrollElementComponent
         name={title.toLowerCase()}
         className={`pt-16 p-12 text-sm flex flex-col items-center ${classNames}`}
       >
@@ -20,7 +22,7 @@ export default function IndexSection(props: IndexSectionProps) {
           <h1 className="font-5xl my-8 font-display">{title}</h1>
         </div>
         {children}
-      </Element>
+      </ScrollElementComponent>
     </section>
   );
 }

@@ -29,3 +29,6 @@ jobs:
 
       - name: Run Tests
         run: yarn test -- --ci --watchAll=false
+
+      - name: Build Next.js
+        run: yarn build

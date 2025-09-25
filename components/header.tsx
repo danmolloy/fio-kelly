@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, forwardRef } from "react";
 import MenuIcon from "./menuIcon";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
+const ScrollLinkComponent = ScrollLink as any;
 
 export const menuItems: { title: string }[] = [
   {
@@ -71,7 +73,7 @@ export default function Header(props: HeaderProps) {
           Home
         </button>
         {menuItems.map((i) => (
-          <Link
+          <ScrollLinkComponent
             href="/"
             data-testid={i.title}
             onClick={() => setTimeout(() => setShowHeader(false), 750)}
@@ -85,7 +87,7 @@ export default function Header(props: HeaderProps) {
             className=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
           >
             <button className="p-2">{i.title}</button>
-          </Link>
+          </ScrollLinkComponent>
         ))}
       </div>
       <MenuIcon setShowMenu={() => setShowMenu()} showMenu={showMenu} />

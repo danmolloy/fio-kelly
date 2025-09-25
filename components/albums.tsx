@@ -103,7 +103,7 @@ export default function Albums() {
         {albumsArr.map((i, index) => (
           <div
             data-index={index}
-            ref={(el) => (imageRefs.current[index] = el)}
+            ref={(el) => { imageRefs.current[index] = el; }}
             key={i.src}
             /* onMouseEnter={() => setSelected(index)} onMouseLeave={() => setSelected(null)} */ className={` m-1 mx-3 flex flex-col items-center  justify-center `}
           >
