@@ -15,7 +15,8 @@ exports[`<ContactSection /> matches snapshot 1`] = `
       <p
         class="my-1"
       >
-        For concert bookings, please contact 
+        For concert bookings, please contact
+         
         <a
           class="hover:text-blue-500 underline"
           href="https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"

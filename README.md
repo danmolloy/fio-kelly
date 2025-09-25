@@ -1,49 +1,59 @@
 # Personal Website
 ## Overview
-This is a personal website for a classical musician, targeting concert promoters and audience members. It showcases a biography, photo gallery, links to various audio recordings and a contact form.
-Technically, the project has a focus on UI/UX design, performance and accessibility.
+This is a personal website for a classical musician, designed to engage concert promoters and audience members. It features a biography, photo gallery, links to audio recordings, and a contact form.
+
+The project emphasizes UI/UX design, performance, and accessibility, showcasing modern frontend development.
 
 ## Features
 ### User Experience
-- **Contact Form** rigourously tested to provide a seamless experience, complete with validation, error messages and feedback.
-- **Responsive Design** built with a mobile-first philosophy. The website has a number if features unique to mobile view, such as a fly out menu and relocated photos from text sections to the photo gallery.
-- **Disappearing Header** built on scroll event listeners, disappearing from view after a short scroll. It reappears almost immediately on upscroll and is in the initial page render.
-- **Interactive Experience** gently scroll with React Scroll on menu link click, ensuring a smooth user experience. Additionally, the mobile screen menu 'burger' icon transforms into an 'X' icon, giving the website visual interactivity.
+* **Contact Form**: Fully validated with clear error messages and user feedback for a seamless experience.
+* **Responsive Design**: Built mobile-first, with unique mobile-specific features such as a fly-out menu and dynamic photo placement.
+* **Disappearing Header**: Header hides on scroll and reappears on upward scroll, improving content focus while remaining accessible.
+* **Interactive Experience**: 
+  * Smooth scrolling with React Scroll on menu item select
+  * Transforming mobile menu icon that enhances visual interactivity
+  * Subtle parallax scrolling on images adds depth and engagement
 
 ### Technical Overview
 #### Performance Optimization
 Although essentially a static website, measures have been taken to improve performance. This includes:
-- All images use NextJS Image Component, optimizing performance by lazy loading.
-- `next/font` is utilised for all fonts, removing external network requests.
-- Google Lighthouse and Vercel speed insights are regularly monitored to ensure a fast user experience.
+* All images use the Next.js Image Component for lazy loading and optimized performance.
+* `next/font` used for all typography to eliminate external font requests.
+* Performance monitored via Google Lighthouse and Vercel Insights, ensuring consistently fast load times.
 
 #### SEO
-- Utilised `next/meta` for improved SEO and web shareability.
-- Google Lighthouse monitored for quality (score of 100)
+* Utilised `next/meta` for improved SEO and web shareability.
+* Regularly verified via Google Lighthouse, consistently scoring 100.
 
 ## Technologies Used
-- NextJS 14
-- TypeScript
-- Tailwind CSS
-- Formik, Yup and AWS SES
-- Jest & React Testing Library and Sentry
-- React Spring, React Scroll and Motion
-- ESLint and Prettier
+* **Framework & Language**: Next.js 14, TypeScript
+* **Styling**: Tailwind CSS
+* **Forms & Email**: Formik, Yup, AWS SES
+* **Testing & Monitoring**: Jest, React Testing Library, Sentry
+* **Animations & Interactivity**: React Spring, React Scroll, Framer Motion
+* **Code Quality**: ESLint, Prettier
 
 ## Testing
-Unit tests with Jest and React Testing Library achieve a high code coverage threshold (86.31%), focusing on maintaining a consistent UI and critical logic. An array of Jest matchers (e.g., .toBe, .toEqual, .toBeInTheDocument) are leveraged for effective assertions. Predictable UI output is maintained with snapshot tests for all components. Test suites are regularly reviewed to ensure failures are swiftly captured, and the site continues to be manually tested across a variety of screen sizes.
-In addition, Sentry is used to monitor errors to ensure they are caught and resolved quickly.
+* Achieves 86.31% unit test coverage, ensuring UI consistency and reliability.
+* Utilizes Jest matchers (.toBe, .toEqual, .toBeInTheDocument) and snapshot testing for predictable output.
+* Sentry monitors runtime errors, helping maintain a stable production experience.
+* Manual testing across multiple screen sizes complements automated testing.
 
 ## Accessibility
-The site has been created with the aim of an inclusive experience for all users. It is continually tested and improved to adhere to Web Content Accessibility Guidelines (WCAG) 2.0 conformance standards, levering tools such as Google Lighthouse (scoring 100/100), ESLint (including `eslint-plugin-jsx-a11y` extension) and Chrome DevTools.
+Designed to meet WCAG 2.0 standards for an inclusive experience:
+* **Semantic HTML**: Improves navigation for screen readers.
+* **Keyboard Navigation**: Entire site accessible without a mouse.
+* **Alt Text**: All images have descriptive alternative text.
+* **Color Contrast**: Meets WCAG guidelines for readability.
+* **Focus Management**: Visible focus indicators for keyboard users.
+* **Accessible Forms**: Clear labels and error messages for all inputs.
+* Tested regularly with Google Lighthouse, ESLint jsx-a11y, and Chrome DevTools, scoring 100/100 in accessibility.
 
-Implemented Features:
-- **Semantic HTML** to improve navigation for screen readers and assistive technologies.
-- **Keyboard Navigation** makes the entire site accessible for users who rely on a keyboard only.
-- **Alternative Text** for all non-text content (i.e. images), ensuring a meaningful and improved access to this content.
-- **Colour Contrast** is maintained between text and background colours according to WCAG guidelines, improving readability for users with visually impairments.
-- **Focus Management** Clear and visible focus indicators, aiding navigation.
-- **Form Accessibility** Concise labels for each input section, in addition to clear error messages upon incorrect data submission.
+## Continuous Integration
+The project includes automated testing and linting via GitHub Actions on pull requests to the main branch.
+* **Lint & Formatting Checks**: Prettier and ESLint are run automatically.
+* **Automated Testing**: Jest tests run in CI mode, ensuring reliability across environments.
+* **Node.js Setup & Dependency Caching**: Uses Node 18 and caches dependencies for faster workflow runs.
 
 ## Credits
-The entire project has been designed and built by Daniel Molloy.
+Designed and developed entirely by Daniel Molloy.

@@ -4,7 +4,11 @@ import Layout from "../../components/layout";
 
 describe("<Layout />", () => {
   beforeEach(() => {
-    render(<Layout children={<div data-testid="mock-children"></div>} />);
+    render(
+      <Layout>
+        <div data-testid="mock-children"></div>
+      </Layout>
+    );
   });
   it("layout-div is in the document", () => {
     const layout = screen.getByTestId("layout-div");

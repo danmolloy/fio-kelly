@@ -1,6 +1,17 @@
 {
-  "extends": "next/core-web-vitals",
+ "extends": "next/core-web-vitals",
   "rules": {
     "@next/next/no-html-link-for-pages": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["__tests__/**/*.ts", "__tests__/**/*.tsx"],
+      "rules": {
+        "@next/next/no-img-element": "off",
+        "@next/next/no-page-custom-font": "off",
+        "@next/next/no-before-interactive-script-outside-document": "off",
+        "@next/next/no-styled-jsx-in-document": "off"
+      }
+    }
+  ]
 }

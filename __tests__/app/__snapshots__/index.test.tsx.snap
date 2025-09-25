@@ -222,7 +222,6 @@ exports[`<Home /> matches snapshot 1`] = `
     <section>
       <div
         class="pt-16 p-12 text-sm flex flex-col items-center  bg-white"
-        name="about"
       >
         <div
           class="flex flex-row w-full"
@@ -298,7 +297,6 @@ exports[`<Home /> matches snapshot 1`] = `
     <section>
       <div
         class="pt-16 p-12 text-sm flex flex-col items-center ease-in-out duration-500 transform bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50"
-        name="listen"
       >
         <div
           class="flex flex-row w-full"
@@ -760,7 +758,6 @@ exports[`<Home /> matches snapshot 1`] = `
     <section>
       <div
         class="pt-16 p-12 text-sm flex flex-col items-center undefined"
-        name="gallery"
       >
         <div
           class="flex flex-row w-full"
@@ -908,7 +905,6 @@ exports[`<Home /> matches snapshot 1`] = `
     <section>
       <div
         class="pt-16 p-12 text-sm flex flex-col items-center bg-gradient-to-b from-zinc-100 to-zinc-100 via-zinc-50"
-        name="contact"
       >
         <div
           class="flex flex-row w-full"
@@ -934,7 +930,8 @@ exports[`<Home /> matches snapshot 1`] = `
               <p
                 class="my-1"
               >
-                For concert bookings, please contact 
+                For concert bookings, please contact
+                 
                 <a
                   class="hover:text-blue-500 underline"
                   href="https://maslink.co.uk/client-directory?client=KELLF1&instrument=FLUTE1"

@@ -45,7 +45,7 @@ export default function Header(props: HeaderProps) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollPosition]);
+  }, [scrollPosition, setShowHeader]);
 
   return (
     <div
